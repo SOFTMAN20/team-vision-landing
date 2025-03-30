@@ -29,6 +29,7 @@ const ElectronicsSection = () => {
               "Customizable automation routines",
               "Secure multi-device integration"
             ]}
+            link="https://github.com/example/smart-home-hub"
           />
           <ProjectCard
             title="Industrial Sensor Network"
@@ -43,6 +44,7 @@ const ElectronicsSection = () => {
               "Cloud-based data aggregation",
               "Predictive maintenance alerts"
             ]}
+            link="https://github.com/example/sensor-network"
           />
           <ProjectCard
             title="Custom PCB Design"
@@ -57,6 +59,7 @@ const ElectronicsSection = () => {
               "Power delivery optimization",
               "Thermal management solutions"
             ]}
+            link="https://github.com/example/custom-pcb-design"
           />
           <ProjectCard
             title="Wearable Health Monitor"
@@ -71,6 +74,7 @@ const ElectronicsSection = () => {
               "Long battery life optimization",
               "HIPAA-compliant data transmission"
             ]}
+            link="https://github.com/example/wearable-health-monitor"
           />
         </div>
       </div>

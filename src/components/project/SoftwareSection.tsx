@@ -29,6 +29,7 @@ const SoftwareSection = () => {
               "Inventory management system",
               "Analytics dashboard"
             ]}
+            link="https://github.com/example/ecommerce-platform"
           />
           <ProjectCard
             title="Mobile Health App"
@@ -43,6 +44,7 @@ const SoftwareSection = () => {
               "Fitness routine generator",
               "Nutrition tracking and analysis"
             ]}
+            link="https://github.com/example/health-tracker-app"
           />
           <ProjectCard
             title="Enterprise CRM Solution"
@@ -57,6 +59,7 @@ const SoftwareSection = () => {
               "Multi-department coordination",
               "Custom reporting and analytics"
             ]}
+            link="https://github.com/example/enterprise-crm"
           />
           <ProjectCard
             title="Secure Communication Platform"
@@ -71,6 +74,7 @@ const SoftwareSection = () => {
               "Secure file sharing",
               "Enterprise compliance features"
             ]}
+            link="https://github.com/example/secure-messaging"
           />
         </div>
       </div>

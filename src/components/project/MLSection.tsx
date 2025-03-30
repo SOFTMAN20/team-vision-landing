@@ -29,6 +29,7 @@ const MLSection = () => {
               "Low-resource deployment",
               "Continuous model improvement"
             ]}
+            link="https://github.com/example/image-classifier"
           />
           <ProjectCard
             title="Reinforcement Learning Simulator"
@@ -43,6 +44,7 @@ const MLSection = () => {
               "Reward function design",
               "Environment variability testing"
             ]}
+            link="https://github.com/example/reinforcement-learning"
           />
           <ProjectCard
             title="Predictive Maintenance System"
@@ -57,6 +59,7 @@ const MLSection = () => {
               "Maintenance schedule optimization",
               "Cost-benefit analysis framework"
             ]}
+            link="https://github.com/example/predictive-maintenance"
           />
           <ProjectCard
             title="Financial Market Analyzer"
@@ -71,6 +74,7 @@ const MLSection = () => {
               "Automated pattern recognition",
               "Backtesting framework for strategies"
             ]}
+            link="https://github.com/example/market-analyzer"
           />
         </div>
       </div>

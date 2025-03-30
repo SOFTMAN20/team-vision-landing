@@ -29,6 +29,7 @@ const AISection = () => {
               "Facial recognition with privacy controls",
               "Automated incident reporting"
             ]}
+            link="https://github.com/example/vision-security"
           />
           <ProjectCard
             title="NLP Content Generator"
@@ -43,6 +44,7 @@ const AISection = () => {
               "Multilingual support for 40+ languages",
               "Sentiment analysis integration"
             ]}
+            link="https://github.com/example/nlp-generator"
           />
           <ProjectCard
             title="Predictive Analytics Engine"
@@ -57,6 +59,7 @@ const AISection = () => {
               "Supply chain optimization",
               "Risk assessment framework"
             ]}
+            link="https://github.com/example/predictive-analytics"
           />
           <ProjectCard
             title="Intelligent Recommendation System"
@@ -71,6 +74,7 @@ const AISection = () => {
               "A/B testing infrastructure",
               "Real-time adaptation to user behavior"
             ]}
+            link="https://github.com/example/recommendation-system"
           />
         </div>
       </div>
