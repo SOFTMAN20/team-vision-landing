@@ -15,7 +15,7 @@ const HeroSection = () => {
             and Machine Learning to transform ideas into impactful innovations.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6">
+            <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6" onClick={() => document.getElementById('electronics')?.scrollIntoView({ behavior: 'smooth' })}>
               Explore Projects
             </Button>
             <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-lg px-8 py-6">
@@ -29,9 +29,9 @@ const HeroSection = () => {
             <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-tech-purple/20 rounded-full blur-3xl"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-xs">
               <img 
-                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="AI Robot" 
-                className="rounded-lg shadow-lg"
+                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                alt="AI Technology" 
+                className="rounded-lg shadow-lg w-full object-cover"
               />
             </div>
           </div>

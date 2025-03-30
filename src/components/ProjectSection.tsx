@@ -10,9 +10,10 @@ interface ProjectCardProps {
   icon: React.ReactNode;
   color: string;
   delay: string;
+  imageSrc?: string;
 }
 
-const ProjectCard = ({ title, description, icon, color, delay }: ProjectCardProps) => (
+const ProjectCard = ({ title, description, icon, color, delay, imageSrc }: ProjectCardProps) => (
   <Card className={`card-hover animate-fade-in [animation-delay:${delay}]`}>
     <CardHeader>
       <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${color}`}>
@@ -22,6 +23,15 @@ const ProjectCard = ({ title, description, icon, color, delay }: ProjectCardProp
       <CardDescription className="text-base">{description}</CardDescription>
     </CardHeader>
     <CardContent>
+      {imageSrc && (
+        <div className="mb-4 overflow-hidden rounded-md">
+          <img 
+            src={imageSrc} 
+            alt={title} 
+            className="w-full h-48 object-cover transition-transform hover:scale-105"
+          />
+        </div>
+      )}
       <ul className="space-y-2 text-sm">
         <li className="flex items-center">
           <span className="w-1 h-1 bg-gray-500 rounded-full mr-2"></span>
@@ -64,6 +74,7 @@ const ProjectSection = () => {
               icon={<Computer className="h-6 w-6 text-white" />}
               color="bg-tech-blue"
               delay="100ms"
+              imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Sensor Networks"
@@ -71,6 +82,7 @@ const ProjectSection = () => {
               icon={<Computer className="h-6 w-6 text-white" />}
               color="bg-tech-teal"
               delay="200ms"
+              imageSrc="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Custom PCB Design"
@@ -78,6 +90,7 @@ const ProjectSection = () => {
               icon={<Computer className="h-6 w-6 text-white" />}
               color="bg-tech-purple"
               delay="300ms"
+              imageSrc="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
           </div>
         </div>
@@ -101,6 +114,7 @@ const ProjectSection = () => {
               icon={<Code className="h-6 w-6 text-white" />}
               color="bg-tech-purple"
               delay="100ms"
+              imageSrc="https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Natural Language Processing"
@@ -108,6 +122,7 @@ const ProjectSection = () => {
               icon={<Code className="h-6 w-6 text-white" />}
               color="bg-tech-blue"
               delay="200ms"
+              imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Predictive Analytics"
@@ -115,6 +130,7 @@ const ProjectSection = () => {
               icon={<Code className="h-6 w-6 text-white" />}
               color="bg-tech-teal"
               delay="300ms"
+              imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
           </div>
         </div>
@@ -138,6 +154,7 @@ const ProjectSection = () => {
               icon={<Book className="h-6 w-6 text-white" />}
               color="bg-tech-orange"
               delay="100ms"
+              imageSrc="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Mobile Development"
@@ -145,6 +162,7 @@ const ProjectSection = () => {
               icon={<Book className="h-6 w-6 text-white" />}
               color="bg-tech-blue"
               delay="200ms"
+              imageSrc="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Enterprise Software"
@@ -152,6 +170,7 @@ const ProjectSection = () => {
               icon={<Book className="h-6 w-6 text-white" />}
               color="bg-tech-purple"
               delay="300ms"
+              imageSrc="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
           </div>
         </div>
@@ -175,6 +194,7 @@ const ProjectSection = () => {
               icon={<FlaskConical className="h-6 w-6 text-white" />}
               color="bg-tech-purple"
               delay="100ms"
+              imageSrc="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Reinforcement Learning"
@@ -182,6 +202,7 @@ const ProjectSection = () => {
               icon={<FlaskConical className="h-6 w-6 text-white" />}
               color="bg-tech-teal"
               delay="200ms"
+              imageSrc="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
             <ProjectCard
               title="Data Science"
@@ -189,6 +210,7 @@ const ProjectSection = () => {
               icon={<FlaskConical className="h-6 w-6 text-white" />}
               color="bg-tech-blue"
               delay="300ms"
+              imageSrc="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             />
           </div>
         </div>
