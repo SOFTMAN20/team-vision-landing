@@ -2,18 +2,20 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 interface TeamMemberProps {
   name: string;
   role: string;
   image: string;
   delay: string;
+  gradient?: string;
 }
 
-const TeamMember = ({ name, role, image, delay }: TeamMemberProps) => (
+const TeamMember = ({ name, role, image, delay, gradient }: TeamMemberProps) => (
   <Card className={`text-center overflow-hidden animate-fade-in [animation-delay:${delay}] card-hover`}>
     <CardHeader className="pb-0">
-      <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+      <div className={`w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ${gradient || ''}`}>
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
       <CardTitle>{name}</CardTitle>
@@ -61,10 +63,11 @@ const TeamSection = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <TeamMember
-            name="Dr. Alex Martinez"
+            name="Dr. Malik Johnson"
             role="AI Research Lead"
-            image="https://randomuser.me/api/portraits/men/1.jpg"
+            image="/lovable-uploads/bb34a64b-e465-4764-a53e-41f0151738c7.png"
             delay="100ms"
+            gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
           />
           <TeamMember
             name="Sarah Johnson"
