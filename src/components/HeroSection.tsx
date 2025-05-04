@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -18,8 +19,8 @@ const HeroSection = () => {
             <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6" onClick={() => document.getElementById('electronics')?.scrollIntoView({ behavior: 'smooth' })}>
               Explore Projects
             </Button>
-            <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-lg px-8 py-6">
-              Learn More
+            <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-lg px-8 py-6" asChild>
+              <Link to="/learn-more">Learn More</Link>
             </Button>
           </div>
         </div>
