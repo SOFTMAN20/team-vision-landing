@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Computer } from 'lucide-react';
+import { Computer, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -31,11 +31,22 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <ul className="space-y-2">
-                <li className="text-gray-400">info@techvision.com</li>
-                <li className="text-gray-400">+1 (555) 123-4567</li>
-                <li className="text-gray-400">123 Tech Plaza, Silicon Valley, CA</li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-tech-blue" />
+                  <a href="mailto:alexmray2002@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                    alexmray2002@gmail.com
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-tech-blue" />
+                  <span className="text-gray-400">0750939217</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-tech-blue" />
+                  <span className="text-gray-400">Mbeya and Dar es Salaam, Tanzania</span>
+                </li>
               </ul>
             </div>
             <div>
