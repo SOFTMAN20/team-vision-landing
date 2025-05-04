@@ -1,7 +1,13 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Code, Computer, FlaskConical, Users } from 'lucide-react';
+import { Code, Computer, FlaskConical, Users, Mail, Phone, MapPin } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +43,33 @@ const Navbar = () => {
           <a href="#team" className="text-gray-700 hover:text-tech-blue transition-colors">
             Team
           </a>
-          <Button className="bg-tech-blue hover:bg-tech-purple">
-            Contact Us
-          </Button>
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button className="bg-tech-blue hover:bg-tech-purple">
+                Contact Us
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-72 p-3">
+              <div className="space-y-4 py-2">
+                <h4 className="text-lg font-bold">Contact Information</h4>
+                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
+                  <Mail className="text-tech-blue" />
+                  <a href="mailto:alexmray2002@gmail.com" className="hover:underline">
+                    alexmray2002@gmail.com
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
+                  <Phone className="text-tech-blue" />
+                  <span>0750939217</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
+                  <MapPin className="text-tech-blue" />
+                  <span>Mbeya and Dar es Salaam, Tanzania</span>
+                </DropdownMenuItem>
+              </div>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
         
         {/* Mobile Toggle */}
@@ -77,9 +107,22 @@ const Navbar = () => {
             <a href="#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Team
             </a>
-            <Button className="bg-tech-blue hover:bg-tech-purple w-full" onClick={() => setIsMenuOpen(false)}>
-              Contact Us
-            </Button>
+            <div className="border-t border-gray-200 pt-3 space-y-3">
+              <div className="flex items-center gap-2">
+                <Mail className="text-tech-blue h-5 w-5" />
+                <a href="mailto:alexmray2002@gmail.com" className="text-gray-700 hover:text-tech-blue transition-colors">
+                  alexmray2002@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="text-tech-blue h-5 w-5" />
+                <span className="text-gray-700">0750939217</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="text-tech-blue h-5 w-5" />
+                <span className="text-gray-700">Mbeya and Dar es Salaam, Tanzania</span>
+              </div>
+            </div>
           </div>
         </div>
       )}
