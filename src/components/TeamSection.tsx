@@ -70,10 +70,11 @@ const TeamSection = () => {
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
           />
           <TeamMember
-            name="Sarah Johnson"
+            name="Victoria Bintu"
             role="Software Architect"
-            image="https://randomuser.me/api/portraits/women/1.jpg"
+            image="/lovable-uploads/7a9c3b1e-a380-435f-bbcc-30bf447c44ac.png"
             delay="200ms"
+            gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
           />
           <TeamMember
             name="Michael Chen"
