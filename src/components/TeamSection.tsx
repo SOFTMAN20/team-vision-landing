@@ -63,8 +63,8 @@ const TeamSection = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <TeamMember
-            name="Dr. Malik Johnson"
-            role="AI Research Lead"
+            name="Alex Mray"
+            role="AI and Software Developer"
             image="/lovable-uploads/bb34a64b-e465-4764-a53e-41f0151738c7.png"
             delay="100ms"
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
