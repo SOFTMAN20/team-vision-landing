@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
 
 export interface ProjectCardProps {
@@ -52,16 +51,6 @@ const ProjectCard = ({
         </ul>
       )}
     </CardContent>
-    <CardFooter className="pt-2">
-      <Button 
-        variant="outline" 
-        className="w-full group" 
-        {...(link ? { as: 'a', href: link, target: "_blank", rel: "noopener noreferrer" } : {})}
-      >
-        View Project
-        {link && <ExternalLink className="ml-2 h-4 w-4 opacity-70 group-hover:opacity-100" />}
-      </Button>
-    </CardFooter>
   </Card>
 );
 
