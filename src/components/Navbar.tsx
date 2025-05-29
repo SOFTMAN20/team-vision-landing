@@ -28,9 +28,6 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#electronics" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Electronics
-          </a>
           <a href="#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
             AI
           </a>
@@ -92,9 +89,6 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-2 px-4 shadow-md absolute top-full left-0 right-0 z-50">
           <div className="flex flex-col space-y-3">
-            <a href="#electronics" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Electronics
-            </a>
             <a href="#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               AI
             </a>

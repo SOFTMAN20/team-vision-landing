@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="font-bold text-xl">TechVision</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Pioneering the future of technology with innovative solutions across electronics, AI, software, and machine learning.
+              Pioneering the future of technology with innovative solutions across AI, software, and machine learning.
             </p>
           </div>
           
@@ -23,7 +23,6 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-bold mb-4">Navigation</h3>
               <ul className="space-y-2">
-                <li><a href="#electronics" className="text-gray-400 hover:text-white transition-colors">Electronics</a></li>
                 <li><a href="#ai" className="text-gray-400 hover:text-white transition-colors">AI</a></li>
                 <li><a href="#software" className="text-gray-400 hover:text-white transition-colors">Software</a></li>
                 <li><a href="#ml" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
