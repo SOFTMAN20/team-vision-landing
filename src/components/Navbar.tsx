@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Code, Computer, FlaskConical, Users, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,9 +21,7 @@ const Navbar = () => {
     <nav className="py-4 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container-custom flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <span className="gradient-tech p-1 rounded">
-            <Computer className="h-6 w-6 text-white" />
-          </span>
+          <Logo />
           <span className="font-bold text-xl">STARLABS</span>
         </a>
         

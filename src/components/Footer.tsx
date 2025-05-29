@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Computer, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
@@ -9,9 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <span className="gradient-tech p-1 rounded">
-                <Computer className="h-6 w-6 text-white" />
-              </span>
+              <Logo />
               <span className="font-bold text-xl">STARLABS</span>
             </div>
             <p className="text-gray-400 text-sm">
