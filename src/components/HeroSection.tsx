@@ -8,15 +8,18 @@ const HeroSection = () => {
     <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding">
       <div className="container-custom grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in [animation-delay:200ms]">
+          <div className="mb-4">
+            <span className="text-tech-blue font-semibold text-lg">Welcome to STARLABS</span>
+          </div>
           <h1 className="mb-4">
             Pioneering the future of <span className="gradient-text">technology</span>
           </h1>
           <p className="text-gray-600 text-lg mb-8">
-            We specialize in cutting-edge solutions across Electronics, AI, Software Development, 
+            We specialize in cutting-edge solutions across AI, Software Development, 
             and Machine Learning to transform ideas into impactful innovations.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6" onClick={() => document.getElementById('electronics')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6" onClick={() => document.getElementById('ai')?.scrollIntoView({ behavior: 'smooth' })}>
               Explore Projects
             </Button>
             <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-lg px-8 py-6" asChild>

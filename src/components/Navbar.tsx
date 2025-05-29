@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Code, Computer, FlaskConical, Users, Mail, Phone, MapPin } from 'lucide-react';
@@ -22,7 +23,7 @@ const Navbar = () => {
           <span className="gradient-tech p-1 rounded">
             <Computer className="h-6 w-6 text-white" />
           </span>
-          <span className="font-bold text-xl">TechVision</span>
+          <span className="font-bold text-xl">STARLABS</span>
         </a>
         
         {/* Desktop Navigation */}

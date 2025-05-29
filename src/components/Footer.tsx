@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="gradient-tech p-1 rounded">
                 <Computer className="h-6 w-6 text-white" />
               </span>
-              <span className="font-bold text-xl">TechVision</span>
+              <span className="font-bold text-xl">STARLABS</span>
             </div>
             <p className="text-gray-400 text-sm">
               Pioneering the future of technology with innovative solutions across AI, software, and machine learning.
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} TechVision. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} STARLABS. All rights reserved.</p>
         </div>
       </div>
     </footer>
