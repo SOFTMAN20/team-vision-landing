@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Code, Computer, FlaskConical, Users, Mail, Phone, MapPin } from 'lucide-react';
@@ -31,8 +30,11 @@ const Navbar = () => {
           <a href="#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
             AI
           </a>
-          <a href="#software" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Software
+          <a href="#mobile" className="text-gray-700 hover:text-tech-blue transition-colors">
+            Mobile Apps
+          </a>
+          <a href="#web" className="text-gray-700 hover:text-tech-blue transition-colors">
+            Web Development
           </a>
           <a href="#ml" className="text-gray-700 hover:text-tech-blue transition-colors">
             Machine Learning
@@ -92,8 +94,11 @@ const Navbar = () => {
             <a href="#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               AI
             </a>
-            <a href="#software" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Software
+            <a href="#mobile" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Mobile Apps
+            </a>
+            <a href="#web" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Web Development
             </a>
             <a href="#ml" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Machine Learning
