@@ -65,14 +65,14 @@ const TeamSection = () => {
           <TeamMember
             name="Alex Mray"
             role="AI and Software Developer"
-            image="/lovable-uploads/bb34a64b-e465-4764-a53e-41f0151738c7.png"
+            image="/images/mray.png"
             delay="100ms"
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
           />
           <TeamMember
             name="Victoria Bintu"
             role="Software Architect"
-            image="/lovable-uploads/7a9c3b1e-a380-435f-bbcc-30bf447c44ac.png"
+            image="/images/vicky.png"
             delay="200ms"
             gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
           />
