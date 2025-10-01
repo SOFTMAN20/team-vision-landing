@@ -9,9 +9,8 @@ const Footer = () => {
       <div className="container-custom py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="mb-4">
               <Logo />
-              <span className="font-bold text-xl">STARLABS</span>
             </div>
             <p className="text-gray-400 text-sm">
               Pioneering the future of technology with innovative solutions across AI, software, and machine learning.

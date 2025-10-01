@@ -20,9 +20,8 @@ const Navbar = () => {
   return (
     <nav className="py-4 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container-custom flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2">
+        <a href="#">
           <Logo />
-          <span className="font-bold text-xl">STARLABS</span>
         </a>
         
         {/* Desktop Navigation */}
