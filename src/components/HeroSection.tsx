@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Scene3D from './Scene3D';
 
 const HeroSection = () => {
   return (
@@ -27,17 +28,9 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
-        <div className="relative h-[300px] md:h-[400px] animate-fade-in [animation-delay:400ms]">
-          <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-tech-blue/10 to-tech-purple/10 rounded-2xl overflow-hidden">
-            <div className="absolute -top-16 -right-16 w-64 h-64 bg-tech-blue/20 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-tech-purple/20 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-xs">
-              <img 
-                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="AI Technology" 
-                className="rounded-lg shadow-lg w-full object-cover"
-              />
-            </div>
+        <div className="relative h-[400px] md:h-[500px] animate-fade-in [animation-delay:400ms]">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden shadow-2xl">
+            <Scene3D />
           </div>
         </div>
       </div>
