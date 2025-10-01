@@ -133,3 +133,14 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-tech-blue to-tech-purple;
   }
 }
+
+@layer utilities {
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(3000%);
+    }
+  }
+}
