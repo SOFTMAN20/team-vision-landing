@@ -6,43 +6,34 @@ import { ExternalLink, Globe } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
-import hdaImg from '@/assets/projects/hda-company.png';
-import gaciniaImg from '@/assets/projects/gacinia-pharmacy.png';
-import nyumbaImg from '@/assets/projects/nyumba-link.png';
-import afrimedImg from '@/assets/projects/afrimed-technologies.png';
-
 const projects = [
   {
     title: "HDA Company",
-    description: "A professional corporate website for Tanzania's premier Mining & Explosives company.",
+    description: "A professional corporate website showcasing business solutions and services.",
     url: "https://www.hda-company.com/",
     color: "bg-tech-blue",
     tags: ["Corporate", "Web Development", "Business"],
-    image: hdaImg,
   },
   {
     title: "Gacinia Pharmacy",
-    description: "A modern pharmacy e-commerce platform for medicines, cosmetics & medical equipment.",
+    description: "A modern pharmacy platform providing healthcare products and services online.",
     url: "https://gaciniapharmacy.vercel.app/",
     color: "bg-tech-teal",
     tags: ["Healthcare", "E-Commerce", "Web App"],
-    image: gaciniaImg,
   },
   {
     title: "Nyumba Link",
-    description: "Tanzania's #1 student housing platform — search, book, and move in hassle-free.",
+    description: "A real estate platform connecting property seekers with listings across Tanzania.",
     url: "https://www.nyumba-link.com/",
     color: "bg-tech-purple",
     tags: ["Real Estate", "Platform", "Full Stack"],
-    image: nyumbaImg,
   },
   {
     title: "Afrimed Technologies",
-    description: "Healthcare equipment supplier — equipping healthcare with precision & trust.",
+    description: "A technology company website delivering innovative digital solutions across Africa.",
     url: "https://www.afrimedtechnologies.com/",
     color: "bg-tech-orange",
-    tags: ["Technology", "Healthcare", "Web Development"],
-    image: afrimedImg,
+    tags: ["Technology", "Corporate", "Web Development"],
   },
 ];
 
@@ -69,13 +60,6 @@ const Projects = () => {
                   className="group card-hover animate-fade-in overflow-hidden border-0 shadow-lg"
                   style={{ animationDelay: `${(index + 1) * 100}ms` }}
                 >
-                  <div className="overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={`${project.title} screenshot`}
-                      className="w-full h-48 md:h-56 object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
                   <CardHeader className="pb-3">
                     <div className="flex items-center gap-3 mb-2">
                       <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${project.color}`}>
