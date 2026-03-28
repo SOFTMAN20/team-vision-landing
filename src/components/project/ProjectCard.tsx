@@ -23,7 +23,7 @@ const ProjectCard = ({
   imageSrc,
   bulletPoints = [],
   link
-}: ProjectCardProps) => (
+}: ProjectCardProps) => {
   const cardContent = (
     <Card className={`card-hover animate-fade-in [animation-delay:${delay}] h-full flex flex-col group ${link ? 'cursor-pointer' : ''}`}>
       <CardHeader className="pb-3">
