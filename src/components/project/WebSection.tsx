@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Globe, Building2, Pill, Home } from 'lucide-react';
+import { Globe, Cloud, ShieldCheck, Database } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 
 const WebSection = () => {
@@ -12,68 +12,64 @@ const WebSection = () => {
             <span className="gradient-text">Web Development</span> Projects
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
-            Real-world web applications we've built for our clients across industries.
+            Modern web applications with responsive design and scalable architecture.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <ProjectCard
-            title="HDA Company"
-            description="Corporate business website"
-            icon={<Building2 className="h-6 w-6 text-white" />}
+            title="E-Commerce Platform"
+            description="Full-featured online marketplace"
+            icon={<Globe className="h-6 w-6 text-white" />}
             color="bg-tech-orange"
             delay="100ms"
-            imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            link="https://www.hda-company.com/"
+            imageSrc="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             bulletPoints={[
-              "Modern corporate design",
-              "Responsive layout",
-              "Service showcase",
-              "Client engagement features"
+              "Microservices architecture",
+              "Secure payment processing",
+              "Inventory management system",
+              "Analytics dashboard"
             ]}
           />
           <ProjectCard
-            title="Gacinia Pharmacy"
-            description="Online pharmacy platform"
-            icon={<Pill className="h-6 w-6 text-white" />}
+            title="Enterprise CRM Solution"
+            description="Customer relationship management"
+            icon={<Cloud className="h-6 w-6 text-white" />}
             color="bg-tech-purple"
             delay="200ms"
-            imageSrc="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            link="https://gaciniapharmacy.vercel.app/"
+            imageSrc="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             bulletPoints={[
-              "Product catalog & search",
-              "Online ordering system",
-              "Healthcare information hub",
-              "Mobile-friendly interface"
+              "Customer lifecycle management",
+              "Sales pipeline automation",
+              "Multi-department coordination",
+              "Custom reporting and analytics"
             ]}
           />
           <ProjectCard
-            title="Nyumba Link"
-            description="Real estate listing platform"
-            icon={<Home className="h-6 w-6 text-white" />}
+            title="Secure Communication Platform"
+            description="End-to-end encrypted messaging"
+            icon={<ShieldCheck className="h-6 w-6 text-white" />}
             color="bg-tech-teal"
             delay="300ms"
-            imageSrc="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            link="https://www.nyumba-link.com/"
+            imageSrc="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             bulletPoints={[
-              "Property search & filtering",
-              "Interactive listing maps",
-              "Agent & owner connections",
-              "Virtual property tours"
+              "Zero-knowledge architecture",
+              "Cross-platform synchronization",
+              "Secure file sharing",
+              "Enterprise compliance features"
             ]}
           />
           <ProjectCard
-            title="Afrimed Technologies"
-            description="Medical equipment supplier"
-            icon={<Globe className="h-6 w-6 text-white" />}
+            title="Data Analytics Dashboard"
+            description="Real-time business intelligence"
+            icon={<Database className="h-6 w-6 text-white" />}
             color="bg-tech-blue"
             delay="400ms"
-            imageSrc="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            link="https://www.afrimedtechnologies.com/"
+            imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             bulletPoints={[
-              "Product catalog system",
-              "Healthcare equipment showcase",
-              "200+ healthcare partners",
-              "Blog & resource center"
+              "Interactive data visualization",
+              "Custom report generation",
+              "API integrations",
+              "Performance monitoring"
             ]}
           />
         </div>
