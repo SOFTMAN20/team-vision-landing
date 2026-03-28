@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Book, Globe, Cloud, ShieldCheck } from 'lucide-react';
+import { Building2, Pill, Home, Globe } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 
 const SoftwareSection = () => {
@@ -12,69 +12,69 @@ const SoftwareSection = () => {
             <span className="gradient-text">Software Development</span> Projects
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
-            Robust and scalable software solutions for enterprise and consumer applications.
+            Full-stack software solutions we've delivered for clients across industries.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <ProjectCard
-            title="E-Commerce Platform"
-            description="Full-featured online marketplace"
-            icon={<Globe className="h-6 w-6 text-white" />}
+            title="HDA Company"
+            description="Corporate business platform"
+            icon={<Building2 className="h-6 w-6 text-white" />}
             color="bg-tech-orange"
             delay="100ms"
-            imageSrc="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            link="https://www.hda-company.com/"
             bulletPoints={[
-              "Microservices architecture",
-              "Secure payment processing",
-              "Inventory management system",
-              "Analytics dashboard"
+              "Custom CMS integration",
+              "Business process automation",
+              "Scalable cloud architecture",
+              "Performance optimized"
             ]}
-            link="https://github.com/example/ecommerce-platform"
           />
           <ProjectCard
-            title="Mobile Health App"
-            description="Cross-platform wellness tracker"
-            icon={<Book className="h-6 w-6 text-white" />}
-            color="bg-tech-blue"
-            delay="200ms"
-            imageSrc="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            bulletPoints={[
-              "Health data synchronization",
-              "Personalized health insights",
-              "Fitness routine generator",
-              "Nutrition tracking and analysis"
-            ]}
-            link="https://github.com/example/health-tracker-app"
-          />
-          <ProjectCard
-            title="Enterprise CRM Solution"
-            description="Customer relationship management"
-            icon={<Cloud className="h-6 w-6 text-white" />}
+            title="Gacinia Pharmacy"
+            description="Healthcare software solution"
+            icon={<Pill className="h-6 w-6 text-white" />}
             color="bg-tech-purple"
-            delay="300ms"
-            imageSrc="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            delay="200ms"
+            imageSrc="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            link="https://gaciniapharmacy.vercel.app/"
             bulletPoints={[
-              "Customer lifecycle management",
-              "Sales pipeline automation",
-              "Multi-department coordination",
-              "Custom reporting and analytics"
+              "Inventory management system",
+              "Order processing pipeline",
+              "Secure data handling",
+              "Real-time stock tracking"
             ]}
-            link="https://github.com/example/enterprise-crm"
           />
           <ProjectCard
-            title="Secure Communication Platform"
-            description="End-to-end encrypted messaging"
-            icon={<ShieldCheck className="h-6 w-6 text-white" />}
+            title="Nyumba Link"
+            description="Real estate management system"
+            icon={<Home className="h-6 w-6 text-white" />}
             color="bg-tech-teal"
-            delay="400ms"
-            imageSrc="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            delay="300ms"
+            imageSrc="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            link="https://www.nyumba-link.com/"
             bulletPoints={[
-              "Zero-knowledge architecture",
-              "Cross-platform synchronization",
-              "Secure file sharing",
-              "Enterprise compliance features"
+              "Property listing engine",
+              "User authentication system",
+              "Search & filter algorithms",
+              "Geolocation services"
             ]}
-            link="https://github.com/example/secure-messaging"
+          />
+          <ProjectCard
+            title="Afrimed Technologies"
+            description="Medical equipment platform"
+            icon={<Globe className="h-6 w-6 text-white" />}
+            color="bg-tech-blue"
+            delay="400ms"
+            imageSrc="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            link="https://www.afrimedtechnologies.com/"
+            bulletPoints={[
+              "E-commerce product catalog",
+              "Database-driven inventory",
+              "Blog content management",
+              "Multi-role admin panel"
+            ]}
           />
         </div>
       </div>
