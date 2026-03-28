@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://team-vision-landing.lovable.app/sitemap.xml
+Sitemap: https://mustsoftwares.vercel.app/sitemap.xml
