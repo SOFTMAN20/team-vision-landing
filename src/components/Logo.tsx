@@ -1,5 +1,5 @@
 import React from 'react';
-import logoAsset from '@/assets/sachi-logo.jpeg.asset.json';
+import logoAsset from '@/assets/sachi-logo.png.asset.json';
 
 interface LogoProps {
   className?: string;
