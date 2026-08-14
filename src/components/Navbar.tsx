@@ -29,7 +29,6 @@ const Navbar = () => {
           <a href="#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
             AI
           </a>
-          </a>
           <a href="#mobile" className="text-gray-700 hover:text-tech-blue transition-colors">
             Mobile Apps
           </a>
@@ -93,7 +92,6 @@ const Navbar = () => {
           <div className="flex flex-col space-y-3">
             <a href="#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               AI
-            </a>
             </a>
             <a href="#mobile" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Mobile Apps
