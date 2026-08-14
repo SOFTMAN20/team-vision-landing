@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-tech-blue" />
-                  <span className="text-gray-400">Mbeya and Dar es Salaam, Tanzania</span>
+                  <span className="text-gray-400">Dar es Salaam, Tanzania</span>
                 </li>
               </ul>
             </div>
