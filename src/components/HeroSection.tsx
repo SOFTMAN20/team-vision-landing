@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="container-custom grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in [animation-delay:200ms]">
           <div className="mb-4">
-            <span className="text-tech-blue font-semibold text-lg">Welcome to MUST TECH</span>
+            <span className="text-tech-blue font-semibold text-lg">Welcome to SACHI SOFTWARES</span>
           </div>
           <h1 className="mb-4">
             Pioneering the future of <span className="gradient-text">technology</span>

@@ -19,13 +19,13 @@ const Logo = ({ className = "", size = 'md' }: LogoProps) => {
     <div className={`flex items-center gap-2 ${className}`}>
       <img
         src={logoImg}
-        alt="MUST TECH Logo"
+        alt="SACHI SOFTWARES Logo"
         width={logoSize}
         height={logoSize}
         className="rounded-md object-contain"
       />
       <span className="text-xl font-bold gradient-text">
-        MUST TECH
+        SACHI SOFTWARES
       </span>
     </div>
   );
