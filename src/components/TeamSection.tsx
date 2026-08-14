@@ -72,7 +72,7 @@ const TeamSection = () => {
           <TeamMember
             name="Lisa Joubert"
             role="Software Architect"
-            image="/images/lisa.png"
+            image="/images/Lisa.png"
             delay="200ms"
             gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
           />
