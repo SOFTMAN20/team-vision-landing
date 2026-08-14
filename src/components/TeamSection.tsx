@@ -77,15 +77,15 @@ const TeamSection = () => {
             gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
           />
           <TeamMember
-            name="Michael Chen"
-            role="Electronics Engineer"
-            image="https://randomuser.me/api/portraits/men/2.jpg"
+            name="Frank Elisha"
+            role="Graphics Designer and Marketing Specialist"
+            image="/images/frank.png"
             delay="300ms"
           />
           <TeamMember
-            name="Priya Sharma"
-            role="ML Specialist"
-            image="https://randomuser.me/api/portraits/women/2.jpg"
+            name="Tonny"
+            role="Mobile Developer"
+            image="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             delay="400ms"
           />
         </div>

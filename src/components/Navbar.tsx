@@ -69,7 +69,7 @@ const Navbar = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center gap-3 cursor-default">
                   <MapPin className="text-tech-blue" />
-                  <span>Mbeya and Dar es Salaam, Tanzania</span>
+                  <span>Dar es Salaam, Tanzania</span>
                 </DropdownMenuItem>
               </div>
             </DropdownMenuContent>
@@ -130,7 +130,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="text-tech-blue h-5 w-5" />
-                <span className="text-gray-700">Mbeya and Dar es Salaam, Tanzania</span>
+                <span className="text-gray-700">Dar es Salaam, Tanzania</span>
               </div>
             </div>
           </div>
