@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImg from '@/assets/mustech-logo.png';
+import logoAsset from '@/assets/sachi-logo.jpeg.asset.json';
 
 interface LogoProps {
   className?: string;
@@ -7,22 +7,23 @@ interface LogoProps {
 }
 
 const Logo = ({ className = "", size = 'md' }: LogoProps) => {
-  const sizeMap = {
+  const heightMap = {
     sm: 32,
     md: 40,
     lg: 48
   };
 
-  const logoSize = sizeMap[size];
+  const logoHeight = heightMap[size];
 
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <img
-        src={logoImg}
+        src={logoAsset.url}
         alt="SACHI SOFTWARES Logo"
-        width={logoSize}
-        height={logoSize}
-        className="rounded-md object-contain"
+        height={logoHeight}
+        width={logoHeight * 2}
+        className="h-auto w-auto object-contain rounded-md"
+        style={{ maxHeight: `${logoHeight}px` }}
       />
       <span className="text-xl font-bold gradient-text">
         SACHI SOFTWARES
