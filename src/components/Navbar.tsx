@@ -38,6 +38,12 @@ const Navbar = () => {
           <a href="#ml" className="text-gray-700 hover:text-tech-blue transition-colors">
             Machine Learning
           </a>
+          <a href="#graphic-design" className="text-gray-700 hover:text-tech-blue transition-colors">
+            Graphic Design
+          </a>
+          <a href="#marketing" className="text-gray-700 hover:text-tech-blue transition-colors">
+            Marketing
+          </a>
           <a href="#team" className="text-gray-700 hover:text-tech-blue transition-colors">
             Team
           </a>
@@ -101,6 +107,12 @@ const Navbar = () => {
             </a>
             <a href="#ml" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Machine Learning
+            </a>
+            <a href="#graphic-design" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Graphic Design
+            </a>
+            <a href="#marketing" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Marketing
             </a>
             <a href="#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Team
