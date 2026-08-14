@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="py-4 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container-custom flex justify-between items-center">
         <a href="#">
-          <Logo />
+          <Logo showText={false} />
         </a>
         
         {/* Desktop Navigation */}
