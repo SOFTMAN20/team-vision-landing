@@ -1,5 +1,4 @@
 import React from 'react';
-import logoAsset from '@/assets/sachi-logo.png.asset.json';
 
 interface LogoProps {
   className?: string;
@@ -19,7 +18,7 @@ const Logo = ({ className = "", size = 'md', showText = true }: LogoProps) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <img
-        src={logoAsset.url}
+        src="/logo1.png"
         alt="SACHI SOFTWARES Logo"
         height={logoHeight}
         width={logoHeight * 2}
