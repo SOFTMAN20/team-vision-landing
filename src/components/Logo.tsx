@@ -22,7 +22,8 @@ const Logo = ({ className = "", size = 'md' }: LogoProps) => {
         alt="SACHI SOFTWARES Logo"
         height={logoHeight}
         width={logoHeight * 2}
-        className="h-auto w-auto max-h-[40px] object-contain rounded-md"
+        className="h-auto w-auto object-contain rounded-md"
+        style={{ maxHeight: `${logoHeight}px` }}
       />
       <span className="text-xl font-bold gradient-text">
         SACHI SOFTWARES
