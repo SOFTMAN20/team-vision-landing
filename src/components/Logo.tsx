@@ -4,9 +4,10 @@ import logoAsset from '@/assets/sachi-logo.png.asset.json';
 interface LogoProps {
   className?: string;
   size?: 'sm' | 'md' | 'lg';
+  showText?: boolean;
 }
 
-const Logo = ({ className = "", size = 'md' }: LogoProps) => {
+const Logo = ({ className = "", size = 'md', showText = true }: LogoProps) => {
   const heightMap = {
     sm: 32,
     md: 40,
@@ -25,9 +26,11 @@ const Logo = ({ className = "", size = 'md' }: LogoProps) => {
         className="h-auto w-auto object-contain rounded-md"
         style={{ maxHeight: `${logoHeight}px` }}
       />
-      <span className="text-xl font-bold gradient-text">
-        SACHI SOFTWARES
-      </span>
+      {showText && (
+        <span className="text-xl font-bold gradient-text">
+          SACHI SOFTWARES
+        </span>
+      )}
     </div>
   );
 };
