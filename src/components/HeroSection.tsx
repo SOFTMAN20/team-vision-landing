@@ -5,6 +5,13 @@ import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const [typedText, setTypedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const words = ['AI-Powered', 'Scalable', 'Enterprise'];
+
   const images = [
     {
       src: "/ai app.png",
@@ -16,13 +23,40 @@ const HeroSection = () => {
     }
   ];
 
+  // Image carousel effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
+
+  // Typewriter effect for changing word
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentIndex = loopNum % words.length;
+      const fullText = words[currentIndex];
+
+      setTypedText(
+        isDeleting
+          ? fullText.substring(0, typedText.length - 1)
+          : fullText.substring(0, typedText.length + 1)
+      );
+
+      setTypingSpeed(isDeleting ? 75 : 150);
+
+      if (!isDeleting && typedText === fullText) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && typedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting, loopNum, typingSpeed]);
 
   return (
     <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding overflow-hidden">
@@ -37,7 +71,13 @@ const HeroSection = () => {
             </div>
           </div>
           <h1 className="mb-4 md:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-            We build <span className="gradient-text">AI-Powered digital solutions</span>
+            We build{' '}
+            <span className="gradient-text inline-block min-w-[280px] sm:min-w-[320px] md:min-w-[380px] lg:min-w-[450px]">
+              {typedText}
+              <span className="animate-pulse">|</span>
+            </span>{' '}
+            <br className="sm:hidden" />
+            <span className="gradient-text">digital solutions</span>
           </h1>
           <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 md:mb-8 leading-relaxed">
             We build custom enterprise software solutions, AI powered systems, mobile apps, and software solutions that help businesses in Tanzania and Africa automate operations, scale faster, and compete globally.
