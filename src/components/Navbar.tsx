@@ -26,25 +26,28 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
             AI
           </a>
-          <a href="#mobile" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#mobile" className="text-gray-700 hover:text-tech-blue transition-colors">
             Mobile Apps
           </a>
-          <a href="#web" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#web" className="text-gray-700 hover:text-tech-blue transition-colors">
             Web Development
           </a>
-          <a href="#ml" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#ml" className="text-gray-700 hover:text-tech-blue transition-colors">
             Machine Learning
           </a>
-          <a href="#graphic-design" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#graphic-design" className="text-gray-700 hover:text-tech-blue transition-colors">
             Graphic Design
           </a>
-          <a href="#marketing" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#marketing" className="text-gray-700 hover:text-tech-blue transition-colors">
             Marketing
           </a>
-          <a href="#team" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/live-projects" className="text-gray-700 hover:text-tech-blue transition-colors">
+            Live Projects
+          </a>
+          <a href="/#team" className="text-gray-700 hover:text-tech-blue transition-colors">
             Team
           </a>
           
@@ -96,25 +99,28 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-2 px-4 shadow-md absolute top-full left-0 right-0 z-50">
           <div className="flex flex-col space-y-3">
-            <a href="#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               AI
             </a>
-            <a href="#mobile" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#mobile" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Mobile Apps
             </a>
-            <a href="#web" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#web" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Web Development
             </a>
-            <a href="#ml" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#ml" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Machine Learning
             </a>
-            <a href="#graphic-design" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#graphic-design" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Graphic Design
             </a>
-            <a href="#marketing" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#marketing" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Marketing
             </a>
-            <a href="#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/live-projects" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+              Live Projects
+            </a>
+            <a href="/#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
               Team
             </a>
             <div className="border-t border-gray-200 pt-3 space-y-3">
