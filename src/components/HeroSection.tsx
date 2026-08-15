@@ -1,10 +1,31 @@
 
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    {
+      src: "/ai app.png",
+      alt: "AI Applications - SACHI TECHNOLOGY"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=75",
+      alt: "AI Technology and Innovation - SACHI TECHNOLOGY"
+    }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding">
+    <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding overflow-hidden">
       <div className="container-custom grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in [animation-delay:200ms] text-center md:text-left">
           <div className="mb-4 md:mb-6">
@@ -40,26 +61,61 @@ const HeroSection = () => {
             <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-tech-blue/30 rounded-full animate-ping [animation-duration:3s]"></div>
             <div className="absolute bottom-1/4 left-1/4 w-24 h-24 border-2 border-tech-purple/30 rounded-full animate-ping [animation-duration:4s] [animation-delay:1s]"></div>
             
-            {/* Main image with hover animations */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-xs transition-all duration-500 hover:scale-105 hover:rotate-2">
-              <div className="relative group">
-                {/* Glow effect on hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=75" 
-                  alt="AI Technology and Innovation - SACHI TECHNOLOGY" 
-                  className="relative rounded-lg shadow-lg w-full object-cover animate-fade-in [animation-delay:600ms]"
-                  loading="eager"
-                  width="800"
-                  height="600"
-                  decoding="async"
-                />
-                
-                {/* Scanning line effect */}
-                <div className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none">
-                  <div className="absolute w-full h-1 bg-gradient-to-r from-transparent via-tech-blue to-transparent opacity-75 animate-[slide-down_3s_ease-in-out_infinite]"></div>
-                </div>
+            {/* Book flip animation with two images */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-xs perspective-1000">
+              <div className="relative w-full h-[280px] md:h-[320px]">
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-1000 transform-style-3d ${
+                      currentImage === index
+                        ? 'opacity-100 rotate-y-0 z-20'
+                        : index === (currentImage + 1) % images.length
+                        ? 'opacity-0 rotate-y-90 z-10'
+                        : 'opacity-0 -rotate-y-90 z-0'
+                    }`}
+                    style={{
+                      transformStyle: 'preserve-3d',
+                      backfaceVisibility: 'hidden',
+                    }}
+                  >
+                    <div className="relative group h-full">
+                      {/* Glow effect on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
+                      
+                      <img 
+                        src={image.src}
+                        alt={image.alt}
+                        className="relative rounded-lg shadow-2xl w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        loading={index === 0 ? "eager" : "lazy"}
+                        width="800"
+                        height="600"
+                        decoding="async"
+                      />
+                      
+                      {/* Scanning line effect */}
+                      <div className="absolute inset-0 overflow-hidden rounded-lg pointer-events-none">
+                        <div className="absolute w-full h-1 bg-gradient-to-r from-transparent via-tech-blue to-transparent opacity-75 animate-[slide-down_3s_ease-in-out_infinite]"></div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Image indicators */}
+              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImage(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      currentImage === index 
+                        ? 'bg-tech-blue w-8' 
+                        : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Show image ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </div>

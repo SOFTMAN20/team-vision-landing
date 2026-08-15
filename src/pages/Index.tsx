@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ProjectSection from '@/components/ProjectSection';
 import TeamSection from '@/components/TeamSection';
+import IndustriesSection from '@/components/IndustriesSection';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
@@ -18,6 +19,7 @@ const Index = () => {
         <Logos3 />
         <ProjectSection />
         <TeamSection />
+        <IndustriesSection />
       </main>
       <Footer />
       <WhatsAppFloat />
