@@ -86,18 +86,18 @@ const Logos3 = ({
   ],
 }: Logos3Props) => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-12 md:py-16 lg:py-20 bg-white">
       <div className="container-custom">
-        <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+        <div className="flex flex-col items-center text-center mb-8 md:mb-12 px-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
             {heading}
           </h2>
-          <p className="text-gray-600 max-w-2xl">
+          <p className="text-gray-600 max-w-2xl text-sm md:text-base">
             We leverage cutting-edge technologies to build robust, scalable solutions
           </p>
         </div>
       </div>
-      <div className="pt-6 md:pt-10">
+      <div className="pt-4 md:pt-6 lg:pt-10">
         <div className="relative mx-auto flex items-center justify-center">
           <Carousel
             opts={{ loop: true }}
@@ -113,9 +113,9 @@ const Logos3 = ({
               {logos.map((logo) => (
                 <CarouselItem
                   key={logo.id}
-                  className="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
+                  className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
                 >
-                  <div className="mx-6 md:mx-10 flex shrink-0 items-center justify-center">
+                  <div className="mx-4 md:mx-6 lg:mx-10 flex shrink-0 items-center justify-center">
                     <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
                       <img
                         src={logo.image}
@@ -129,8 +129,8 @@ const Logos3 = ({
               ))}
             </CarouselContent>
           </Carousel>
-          <div className="absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
-          <div className="absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          <div className="absolute inset-y-0 left-0 w-8 md:w-12 lg:w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+          <div className="absolute inset-y-0 right-0 w-8 md:w-12 lg:w-24 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
         </div>
       </div>
     </section>

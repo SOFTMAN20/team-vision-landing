@@ -59,7 +59,7 @@ const FloatingAssistant = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -69,14 +69,14 @@ const FloatingAssistant = () => {
             transition={{ duration: 0.3 }}
             className="mb-4"
           >
-            <Card className="w-[380px] h-[500px] flex flex-col shadow-2xl overflow-hidden">
+            <Card className="w-[calc(100vw-2rem)] sm:w-[380px] h-[500px] sm:h-[550px] flex flex-col shadow-2xl overflow-hidden max-w-md">
               {/* Header */}
-              <div className="bg-gradient-to-r from-tech-blue to-tech-purple p-4 flex items-center justify-between">
-                <div className="flex items-center gap-3">
+              <div className="bg-gradient-to-r from-tech-blue to-tech-purple p-3 sm:p-4 flex items-center justify-between">
+                <div className="flex items-center gap-2 sm:gap-3">
                   <motion.div
                     animate={{ rotate: [0, 360] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                    className="bg-white/20 p-2 rounded-full"
+                    className="bg-white/20 p-1.5 sm:p-2 rounded-full"
                   >
                     <Bot className="h-5 w-5 text-white" />
                   </motion.div>
@@ -173,7 +173,7 @@ const FloatingAssistant = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-gradient-to-r from-tech-blue to-tech-purple text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow relative"
+        className="bg-gradient-to-r from-tech-blue to-tech-purple text-white p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow relative"
       >
         <AnimatePresence mode="wait">
           {isOpen ? (
@@ -184,7 +184,7 @@ const FloatingAssistant = () => {
               exit={{ rotate: 90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <X className="h-6 w-6" />
+              <X className="h-5 w-5 md:h-6 md:w-6" />
             </motion.div>
           ) : (
             <motion.div
@@ -194,7 +194,7 @@ const FloatingAssistant = () => {
               exit={{ rotate: -90, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <Bot className="h-6 w-6" />
+              <Bot className="h-5 w-5 md:h-6 md:w-6" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -204,7 +204,7 @@ const FloatingAssistant = () => {
           <motion.span
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full border-2 border-white"
+            className="absolute top-0 right-0 h-2.5 w-2.5 md:h-3 md:w-3 bg-red-500 rounded-full border-2 border-white"
           />
         )}
       </motion.button>

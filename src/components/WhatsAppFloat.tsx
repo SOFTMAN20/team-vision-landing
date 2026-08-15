@@ -11,11 +11,11 @@ const WhatsAppFloat = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-24 right-6 z-40 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110"
+      className="fixed bottom-20 right-4 md:bottom-24 md:right-6 z-40 bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-lg hover:bg-[#20BA5A] transition-all duration-300 hover:scale-110"
       aria-label="Chat on WhatsApp"
       title="Chat on WhatsApp"
     >
-      <MessageCircle className="h-5 w-5" />
+      <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
     </a>
   );
 };
