@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -7,22 +6,26 @@ const HeroSection = () => {
   return (
     <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding">
       <div className="container-custom grid md:grid-cols-2 gap-8 items-center">
-        <div className="animate-fade-in [animation-delay:200ms]">
-          <div className="mb-4">
-            <span className="text-tech-blue font-semibold text-lg">Welcome to SACHI SOFTWARES</span>
+        <div className="animate-fade-in [animation-delay:200ms] text-center md:text-left">
+          <div className="mb-4 md:mb-6">
+            <div className="inline-flex items-center gap-2 bg-blue-50 px-3 py-2 md:px-4 md:py-2 rounded-full">
+              <svg className="w-4 h-4 md:w-5 md:h-5 text-tech-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M11.4 2.85a1 1 0 00-1.8 0l-7 14a1 1 0 001.8.9L5.5 16h9l1.1 1.75a1 1 0 001.8-.9l-7-14zM7.62 14L10 9.24 12.38 14H7.62z"/>
+              </svg>
+              <span className="text-tech-blue font-semibold text-xs md:text-sm lg:text-base">Enterprise AI & Software Development Company in Tanzania</span>
+            </div>
           </div>
-          <h1 className="mb-4">
-            Pioneering the future of <span className="gradient-text">technology</span>
+          <h1 className="mb-4 md:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            We build <span className="gradient-text">AI-Powered digital solutions</span>
           </h1>
-          <p className="text-gray-600 text-lg mb-8">
-            We specialize in cutting-edge solutions across AI, Software Development, 
-            and Machine Learning to transform ideas into impactful innovations.
+          <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 md:mb-8 leading-relaxed">
+            We build custom enterprise software solutions, AI powered systems, mobile apps, and software solutions that help businesses in Tanzania and Africa automate operations, scale faster, and compete globally.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button className="bg-tech-blue hover:bg-tech-purple text-lg px-8 py-6" onClick={() => document.getElementById('ai')?.scrollIntoView({ behavior: 'smooth' })}>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
+            <Button className="bg-tech-blue hover:bg-tech-purple text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" onClick={() => document.getElementById('ai')?.scrollIntoView({ behavior: 'smooth' })}>
               Explore Projects
             </Button>
-            <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-lg px-8 py-6" asChild>
+            <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" asChild>
               <Link to="/learn-more">Learn More</Link>
             </Button>
           </div>

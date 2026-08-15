@@ -139,12 +139,12 @@ const LiveProjects = () => {
     },
     {
       id: 12,
-      title: 'AI Content Generator',
-      description: 'AI-powered tool for generating marketing copy, articles, and creative content',
+      title: 'Whinta Voice AI',
+      description: 'Advanced voice AI technology for natural conversations and voice-powered applications',
       category: 'AI & Chatbot',
-      tags: ['AI', 'GPT', 'Content', 'Automation'],
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://chat.openai.com/',
+      tags: ['Voice AI', 'Speech Recognition', 'NLP', 'Conversational AI'],
+      image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://whinta.com/whinta-voice',
       date: '2024-02'
     },
   ];
