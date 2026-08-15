@@ -10,9 +10,10 @@ interface TeamMemberProps {
   image: string;
   delay: string;
   gradient?: string;
+  description: string;
 }
 
-const TeamMember = ({ name, role, image, delay, gradient }: TeamMemberProps) => (
+const TeamMember = ({ name, role, image, delay, gradient, description }: TeamMemberProps) => (
   <Card className={`text-center overflow-hidden animate-fade-in [animation-delay:${delay}] card-hover`}>
     <CardHeader className="pb-0">
       <div className={`w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ${gradient || ''}`}>
@@ -23,7 +24,7 @@ const TeamMember = ({ name, role, image, delay, gradient }: TeamMemberProps) => 
     </CardHeader>
     <CardContent>
       <p className="text-gray-600 text-sm">
-        Experienced professional with expertise in cutting-edge technology solutions and innovation.
+        {description}
       </p>
     </CardContent>
     <CardFooter className="justify-center gap-4">
@@ -68,6 +69,7 @@ const TeamSection = () => {
             image="/images/mray.png"
             delay="100ms"
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
+            description="Lead developer specializing in AI solutions, chatbots, and full-stack development. Passionate about creating intelligent systems that solve real-world problems."
           />
           <TeamMember
             name="Victoria Zakaria"
@@ -75,18 +77,21 @@ const TeamSection = () => {
             image="/images/victoria.png"
             delay="200ms"
             gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
+            description="Expert in software architecture and system design. Builds scalable and robust applications with focus on performance and user experience."
           />
           <TeamMember
             name="Frank Elisha"
             role="Graphics Designer and Marketing Specialist"
             image="/images/frank.png"
             delay="300ms"
+            description="Creative designer and marketing strategist. Transforms ideas into stunning visuals and develops data-driven marketing campaigns that drive results."
           />
           <TeamMember
             name="Tonny"
             role="Mobile Developer"
-            image="images/tonny.png"
+            image="/images/tonny.png"
             delay="400ms"
+            description="Mobile app specialist skilled in iOS and Android development. Creates beautiful, intuitive mobile experiences with modern technologies."
           />
         </div>
       </div>

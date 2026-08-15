@@ -29,65 +29,123 @@ const LiveProjects = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'HDA Company Website',
+      description: 'Professional corporate website for HDA Company showcasing their business services and portfolio',
+      category: 'Web Development',
+      tags: ['React', 'Modern Design', 'SEO', 'Responsive'],
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://www.hda-company.com/',
+      date: '2024-01'
+    },
+    {
+      id: 2,
+      title: 'Nyumba Link',
+      description: 'Real estate platform connecting property buyers, sellers, and renters in Tanzania',
+      category: 'Web Development',
+      tags: ['Real Estate', 'Property Listing', 'Search', 'Database'],
+      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://www.nyumba-link.com/',
+      date: '2024-02'
+    },
+    {
+      id: 3,
+      title: 'Gacinia Pharmacy',
+      description: 'Modern pharmacy e-commerce platform with online medicine ordering and prescription management',
+      category: 'Web Development',
+      tags: ['E-commerce', 'Healthcare', 'Pharmacy', 'React'],
+      image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://gaciniapharmacy.vercel.app/',
+      date: '2024-03'
+    },
+    {
+      id: 4,
+      title: 'Agrogen AI',
+      description: 'AI-powered agricultural platform for smart farming, crop management, and yield optimization',
+      category: 'AI & Chatbot',
+      tags: ['AI', 'Agriculture', 'Machine Learning', 'IoT'],
+      image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://agrogenaii.vercel.app/',
+      date: '2024-01'
+    },
+    {
+      id: 5,
       title: 'AI Customer Support Chatbot',
       description: 'Intelligent chatbot with natural language processing for 24/7 customer support',
       category: 'AI & Chatbot',
       tags: ['AI', 'NLP', 'React', 'Node.js'],
       image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/chatbot',
-      githubUrl: 'https://github.com/example/chatbot',
+      liveUrl: 'https://www.chatbot.com/chatbot-demo/',
       date: '2024-01'
-    },
-    {
-      id: 2,
-      title: 'E-Commerce Mobile App',
-      description: 'Cross-platform shopping app with payment integration and real-time tracking',
-      category: 'Mobile Apps',
-      tags: ['React Native', 'Firebase', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/ecommerce',
-      date: '2024-02'
-    },
-    {
-      id: 3,
-      title: 'Restaurant Management System',
-      description: 'Full-stack web application for restaurant operations and online ordering',
-      category: 'Web Development',
-      tags: ['React', 'TypeScript', 'PostgreSQL'],
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/restaurant',
-      githubUrl: 'https://github.com/example/restaurant',
-      date: '2024-03'
-    },
-    {
-      id: 4,
-      title: 'Predictive Analytics Platform',
-      description: 'ML-powered platform for business forecasting and data visualization',
-      category: 'Machine Learning',
-      tags: ['Python', 'TensorFlow', 'React', 'FastAPI'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/analytics',
-      date: '2024-01'
-    },
-    {
-      id: 5,
-      title: 'Brand Identity Package',
-      description: 'Complete branding solution including logo, guidelines, and marketing materials',
-      category: 'Graphic Design',
-      tags: ['Illustrator', 'Photoshop', 'Figma'],
-      image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/branding',
-      date: '2024-02'
     },
     {
       id: 6,
-      title: 'Social Media Campaign',
-      description: 'Multi-platform marketing campaign with 300% engagement increase',
-      category: 'Marketing',
-      tags: ['Social Media', 'Content Strategy', 'Analytics'],
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      liveUrl: 'https://example.com/campaign',
+      title: 'E-Commerce Platform',
+      description: 'Full-featured online shopping platform with cart, checkout, and order management',
+      category: 'Web Development',
+      tags: ['React', 'E-commerce', 'Payment', 'Cart'],
+      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://demo.vercel.store/',
+      date: '2024-02'
+    },
+    {
+      id: 7,
+      title: 'Task Management App',
+      description: 'Collaborative project management tool with kanban boards and team features',
+      category: 'Web Development',
+      tags: ['React', 'TypeScript', 'Collaboration', 'Productivity'],
+      image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://trello.com/',
       date: '2024-03'
+    },
+    {
+      id: 8,
+      title: 'Data Analytics Dashboard',
+      description: 'Real-time analytics platform with interactive charts and business intelligence',
+      category: 'Machine Learning',
+      tags: ['Python', 'Data Viz', 'React', 'Analytics'],
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://www.chartjs.org/samples/latest/',
+      date: '2024-01'
+    },
+    {
+      id: 9,
+      title: 'Brand Identity Design',
+      description: 'Complete branding solution with logo, color schemes, and brand guidelines',
+      category: 'Graphic Design',
+      tags: ['Branding', 'Logo Design', 'Identity', 'Visual'],
+      image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://www.behance.net/gallery/brand-identity',
+      date: '2024-02'
+    },
+    {
+      id: 10,
+      title: 'Social Media Campaign',
+      description: 'Multi-platform marketing campaign with content strategy and engagement tracking',
+      category: 'Marketing',
+      tags: ['Social Media', 'Content', 'Strategy', 'Engagement'],
+      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://buffer.com/',
+      date: '2024-03'
+    },
+    {
+      id: 11,
+      title: 'Mobile Fitness App',
+      description: 'Cross-platform fitness tracking app with workout plans and progress monitoring',
+      category: 'Mobile Apps',
+      tags: ['React Native', 'Fitness', 'Health', 'Mobile'],
+      image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://www.myfitnesspal.com/',
+      date: '2024-01'
+    },
+    {
+      id: 12,
+      title: 'Whinta Voice AI',
+      description: 'Advanced voice AI technology for natural conversations and voice-powered applications',
+      category: 'AI & Chatbot',
+      tags: ['Voice AI', 'Speech Recognition', 'NLP', 'Conversational AI'],
+      image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      liveUrl: 'https://whinta.com/whinta-voice',
+      date: '2024-02'
     },
   ];
 
