@@ -14,7 +14,7 @@ const FloatingAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "Hi! I'm SACHI AI Assistant. How can I help you today?",
+      text: "Hi! I'm SACHI TECHNOLOGY AI Assistant. How can I help you today?",
       isBot: true,
     },
   ]);
@@ -81,7 +81,7 @@ const FloatingAssistant = () => {
                     <Bot className="h-5 w-5 text-white" />
                   </motion.div>
                   <div>
-                    <h3 className="text-white font-bold">SACHI AI Assistant</h3>
+                    <h3 className="text-white font-bold">SACHI TECHNOLOGY AI</h3>
                     <p className="text-white/80 text-xs">Online now</p>
                   </div>
                 </div>

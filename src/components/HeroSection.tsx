@@ -47,9 +47,13 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-tech-blue to-tech-purple rounded-lg blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                 
                 <img 
-                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="AI Technology" 
+                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=75" 
+                  alt="AI Technology and Innovation - SACHI TECHNOLOGY" 
                   className="relative rounded-lg shadow-lg w-full object-cover animate-fade-in [animation-delay:600ms]"
+                  loading="eager"
+                  width="800"
+                  height="600"
+                  decoding="async"
                 />
                 
                 {/* Scanning line effect */}
