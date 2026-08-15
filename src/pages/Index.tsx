@@ -5,6 +5,8 @@ import HeroSection from '@/components/HeroSection';
 import ProjectSection from '@/components/ProjectSection';
 import TeamSection from '@/components/TeamSection';
 import Footer from '@/components/Footer';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+import FloatingAssistant from '@/components/FloatingAssistant';
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
         <TeamSection />
       </main>
       <Footer />
+      <WhatsAppFloat />
+      <FloatingAssistant />
     </div>
   );
 };

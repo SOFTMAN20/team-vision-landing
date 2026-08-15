@@ -70,9 +70,9 @@ const TeamSection = () => {
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
           />
           <TeamMember
-            name="Lisa Joubert"
+            name="Victoria Zakaria"
             role="Software Architect"
-            image="/images/Lisa.png"
+            image="/images/victoria.png"
             delay="200ms"
             gradient="bg-gradient-to-br from-pink-300/40 to-orange-200/40 p-1"
           />
@@ -85,7 +85,7 @@ const TeamSection = () => {
           <TeamMember
             name="Tonny"
             role="Mobile Developer"
-            image="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image="images/tonny.png"
             delay="400ms"
           />
         </div>
