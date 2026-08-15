@@ -19,13 +19,24 @@ const Footer = () => {
           
           <div className="md:col-span-3 grid sm:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold mb-4">Navigation</h3>
+              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#ai" className="text-gray-400 hover:text-white transition-colors">AI</a></li>
-                <li><a href="#mobile" className="text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li>
-                <li><a href="#web" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                <li><a href="#ml" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
-                <li><a href="#team" className="text-gray-400 hover:text-white transition-colors">Team</a></li>
+                <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                <li><a href="/learn-more" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/live-projects" className="text-gray-400 hover:text-white transition-colors">Live Projects</a></li>
+                <li><a href="/#team" className="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Services</h3>
+              <ul className="space-y-2">
+                <li><a href="/#ai" className="text-gray-400 hover:text-white transition-colors">AI & Chatbots</a></li>
+                <li><a href="/#mobile" className="text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li>
+                <li><a href="/#web" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                <li><a href="/#ml" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
+                <li><a href="/#graphic-design" className="text-gray-400 hover:text-white transition-colors">Graphic Design</a></li>
+                <li><a href="/#marketing" className="text-gray-400 hover:text-white transition-colors">Marketing</a></li>
               </ul>
             </div>
             <div>

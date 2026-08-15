@@ -20,63 +20,31 @@ const Navbar = () => {
   return (
     <nav className="py-4 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container-custom flex justify-between items-center">
-        <a href="#">
+        <a href="/">
           <Logo showText={false} />
         </a>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <a href="/#ai" className="text-gray-700 hover:text-tech-blue transition-colors">
-            AI
+        <div className="hidden md:flex items-center gap-6">
+          <a href="/" className="text-gray-700 hover:text-tech-blue transition-colors font-medium">
+            Home
           </a>
-          <a href="/#mobile" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Mobile Apps
+          <a href="/learn-more" className="text-gray-700 hover:text-tech-blue transition-colors font-medium">
+            About
           </a>
-          <a href="/#web" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Web Development
+          <a href="/live-projects" className="text-gray-700 hover:text-tech-blue transition-colors font-medium">
+            Projects
           </a>
-          <a href="/#ml" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Machine Learning
-          </a>
-          <a href="/#graphic-design" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Graphic Design
-          </a>
-          <a href="/#marketing" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Marketing
-          </a>
-          <a href="/live-projects" className="text-gray-700 hover:text-tech-blue transition-colors">
-            Live Projects
-          </a>
-          <a href="/#team" className="text-gray-700 hover:text-tech-blue transition-colors">
+          <a href="/#team" className="text-gray-700 hover:text-tech-blue transition-colors font-medium">
             Team
           </a>
+          <a href="/contact" className="text-gray-700 hover:text-tech-blue transition-colors font-medium">
+            Contact
+          </a>
           
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button className="bg-tech-blue hover:bg-tech-purple">
-                Contact Us
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-72 p-3">
-              <div className="space-y-4 py-2">
-                <h4 className="text-lg font-bold">Contact Information</h4>
-                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
-                  <Mail className="text-tech-blue" />
-                  <a href="mailto:alexmray2002@gmail.com" className="hover:underline">
-                    alexmray2002@gmail.com
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
-                  <Phone className="text-tech-blue" />
-                  <span>0750939217</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-center gap-3 cursor-default">
-                  <MapPin className="text-tech-blue" />
-                  <span>Dar es Salaam, Tanzania</span>
-                </DropdownMenuItem>
-              </div>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <Button className="bg-tech-blue hover:bg-tech-purple" asChild>
+            <a href="/contact">Get Started</a>
+          </Button>
         </div>
         
         {/* Mobile Toggle */}
@@ -99,45 +67,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-2 px-4 shadow-md absolute top-full left-0 right-0 z-50">
           <div className="flex flex-col space-y-3">
-            <a href="/#ai" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              AI
+            <a href="/" className="text-gray-700 py-2 hover:text-tech-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              Home
             </a>
-            <a href="/#mobile" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Mobile Apps
+            <a href="/learn-more" className="text-gray-700 py-2 hover:text-tech-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              About
             </a>
-            <a href="/#web" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Web Development
+            <a href="/live-projects" className="text-gray-700 py-2 hover:text-tech-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              Projects
             </a>
-            <a href="/#ml" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Machine Learning
-            </a>
-            <a href="/#graphic-design" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Graphic Design
-            </a>
-            <a href="/#marketing" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Marketing
-            </a>
-            <a href="/live-projects" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Live Projects
-            </a>
-            <a href="/#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+            <a href="/#team" className="text-gray-700 py-2 hover:text-tech-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
               Team
             </a>
-            <div className="border-t border-gray-200 pt-3 space-y-3">
-              <div className="flex items-center gap-2">
-                <Mail className="text-tech-blue h-5 w-5" />
-                <a href="mailto:alexmray2002@gmail.com" className="text-gray-700 hover:text-tech-blue transition-colors">
-                  alexmray2002@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone className="text-tech-blue h-5 w-5" />
-                <span className="text-gray-700">0750939217</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="text-tech-blue h-5 w-5" />
-                <span className="text-gray-700">Dar es Salaam, Tanzania</span>
-              </div>
+            <a href="/contact" className="text-gray-700 py-2 hover:text-tech-blue transition-colors font-medium" onClick={() => setIsMenuOpen(false)}>
+              Contact
+            </a>
+            <div className="border-t border-gray-200 pt-3">
+              <Button className="w-full bg-tech-blue hover:bg-tech-purple" asChild onClick={() => setIsMenuOpen(false)}>
+                <a href="/contact">Get Started</a>
+              </Button>
             </div>
           </div>
         </div>
