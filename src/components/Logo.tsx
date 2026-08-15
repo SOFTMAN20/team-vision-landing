@@ -19,7 +19,7 @@ const Logo = ({ className = "", size = 'md', showText = true }: LogoProps) => {
     <div className={`flex items-center gap-2 ${className}`}>
       <img
         src="/logo1.png"
-        alt="SACHI SOFTWARES Logo"
+        alt="SACHI TECHNOLOGY Logo"
         height={logoHeight}
         width={logoHeight * 2}
         className="h-auto w-auto object-contain rounded-md"
@@ -27,7 +27,7 @@ const Logo = ({ className = "", size = 'md', showText = true }: LogoProps) => {
       />
       {showText && (
         <span className="text-xl font-bold gradient-text">
-          SACHI SOFTWARES
+          SACHI TECHNOLOGY
         </span>
       )}
     </div>

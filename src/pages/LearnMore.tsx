@@ -115,7 +115,7 @@ const LearnMore = () => {
               </motion.div>
               
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                About <span className="text-yellow-300">SACHI SOFTWARES</span>
+                About <span className="text-yellow-300">SACHI TECHNOLOGY</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8">
                 We are a technology company specializing in AI, software development, 
@@ -217,7 +217,7 @@ const LearnMore = () => {
                   Pioneering the Future of Technology
                 </h2>
                 <p className="text-gray-600 text-lg mb-4">
-                  At SACHI SOFTWARES, we're committed to transforming complex challenges 
+                  At SACHI TECHNOLOGY, we're committed to transforming complex challenges 
                   into elegant solutions that drive progress across industries.
                 </p>
                 <p className="text-gray-600 text-lg mb-6">
