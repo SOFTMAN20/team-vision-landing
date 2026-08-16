@@ -13,4 +13,12 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://mustsoftwares.vercel.app/sitemap.xml
+# Sitemap location
+Sitemap: https://sachitechnology.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/
+
