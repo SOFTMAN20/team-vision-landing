@@ -14,7 +14,7 @@ const FloatingAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "Hi! I'm SACHI TECHNOLOGY AI Assistant. How can I help you today?",
+      text: "Hi! I'm SACHI AI Assistant. How can I help you today?",
       isBot: true,
     },
   ]);

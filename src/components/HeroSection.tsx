@@ -91,7 +91,7 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
-        <div className="relative h-[300px] md:h-[400px] animate-fade-in [animation-delay:400ms]">
+        <div className="relative h-[450px] sm:h-[500px] md:h-[400px] animate-fade-in [animation-delay:400ms]">
           <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-tech-blue/10 to-tech-purple/10 rounded-2xl overflow-hidden">
             {/* Animated gradient blobs */}
             <div className="absolute -top-16 -right-16 w-64 h-64 bg-tech-blue/20 rounded-full blur-3xl animate-pulse"></div>
@@ -102,8 +102,8 @@ const HeroSection = () => {
             <div className="absolute bottom-1/4 left-1/4 w-24 h-24 border-2 border-tech-purple/30 rounded-full animate-ping [animation-duration:4s] [animation-delay:1s]"></div>
             
             {/* Book flip animation with two images */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-xs perspective-1000">
-              <div className="relative w-full h-[280px] md:h-[320px]">
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-[85%] md:w-full max-w-sm perspective-1000">
+              <div className="relative w-full h-[380px] sm:h-[420px] md:h-[320px]">
                 {images.map((image, index) => (
                   <div
                     key={index}
