@@ -81,7 +81,7 @@ const FloatingAssistant = () => {
                     <Bot className="h-5 w-5 text-white" />
                   </motion.div>
                   <div>
-                    <h3 className="text-white font-bold">SACHI TECHNOLOGY AI</h3>
+                    <h3 className="text-white font-bold">SACHI AI</h3>
                     <p className="text-white/80 text-xs">Online now</p>
                   </div>
                 </div>
