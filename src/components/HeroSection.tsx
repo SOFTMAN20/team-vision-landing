@@ -67,7 +67,7 @@ const HeroSection = () => {
               <svg className="w-4 h-4 md:w-5 md:h-5 text-tech-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M11.4 2.85a1 1 0 00-1.8 0l-7 14a1 1 0 001.8.9L5.5 16h9l1.1 1.75a1 1 0 001.8-.9l-7-14zM7.62 14L10 9.24 12.38 14H7.62z"/>
               </svg>
-              <span className="text-tech-blue font-semibold text-xs md:text-sm lg:text-base">Enterprise AI & Software Development Company in Tanzania</span>
+              <span className="text-tech-blue font-semibold text-xs md:text-sm lg:text-base">Sachi - Enterprise AI & Software Development Company in Tanzania</span>
             </div>
           </div>
           <h1 className="mb-4 md:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
@@ -80,7 +80,7 @@ const HeroSection = () => {
             <span className="gradient-text">digital solutions</span>
           </h1>
           <p className="text-gray-600 text-base sm:text-lg md:text-xl mb-6 md:mb-8 leading-relaxed">
-            We build custom enterprise software solutions, AI powered systems, mobile apps, and software solutions that help businesses in Tanzania and Africa automate operations, scale faster, and compete globally.
+            Sachi builds custom enterprise software solutions, AI powered systems, mobile apps, and software solutions that help businesses in Tanzania and Africa automate operations, scale faster, and compete globally. Sachi is your trusted technology partner.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
             <Button className="bg-tech-blue hover:bg-tech-purple text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" onClick={() => document.getElementById('ai')?.scrollIntoView({ behavior: 'smooth' })}>
