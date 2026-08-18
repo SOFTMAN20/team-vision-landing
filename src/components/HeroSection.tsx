@@ -83,8 +83,8 @@ const HeroSection = () => {
             We build custom enterprise software solutions, AI powered systems, mobile apps, and software solutions that help businesses in Tanzania and Africa automate operations, scale faster, and compete globally.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
-            <Button className="bg-tech-blue hover:bg-tech-purple text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" onClick={() => document.getElementById('ai')?.scrollIntoView({ behavior: 'smooth' })}>
-              Explore Projects
+            <Button className="bg-tech-blue hover:bg-tech-purple text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" asChild>
+              <Link to="/projects">Explore Projects</Link>
             </Button>
             <Button variant="outline" className="text-tech-blue border-tech-blue hover:bg-tech-blue/10 text-base md:text-lg px-6 py-5 md:px-8 md:py-6 w-full sm:w-auto" asChild>
               <Link to="/learn-more">Learn More</Link>

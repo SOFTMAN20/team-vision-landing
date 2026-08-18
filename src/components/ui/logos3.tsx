@@ -85,24 +85,30 @@ const Logos3 = ({
     },
     {
       id: "logo-11",
+      description: "Claude AI",
+      image: "https://cdn.simpleicons.org/anthropic/000000",
+      className: "h-12 w-auto",
+    },
+    {
+      id: "logo-12",
       description: "Docker",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg",
       className: "h-12 w-auto",
     },
     {
-      id: "logo-12",
+      id: "logo-13",
       description: "Firebase",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg",
       className: "h-12 w-auto",
     },
     {
-      id: "logo-13",
+      id: "logo-14",
       description: "MongoDB",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
       className: "h-12 w-auto",
     },
     {
-      id: "logo-14",
+      id: "logo-15",
       description: "Flutter",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
       className: "h-12 w-auto",
