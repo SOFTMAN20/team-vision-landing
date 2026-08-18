@@ -1,22 +1,10 @@
 import React from 'react';
 import ServicesOverview from './ServicesOverview';
-import AISection from './project/AISection';
-import MobileSection from './project/MobileSection';
-import WebSection from './project/WebSection';
-import MLSection from './project/MLSection';
-import GraphicDesignSection from './project/GraphicDesignSection';
-import MarketingSection from './project/MarketingSection';
 
 const ProjectSection = () => {
   return (
     <div className="bg-white">
       <ServicesOverview />
-      <AISection />
-      <MobileSection />
-      <WebSection />
-      <MLSection />
-      <GraphicDesignSection />
-      <MarketingSection />
     </div>
   );
 };

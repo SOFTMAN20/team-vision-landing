@@ -45,7 +45,7 @@ const Navbar = () => {
             {isServicesOpen && (
               <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-lg shadow-lg border border-gray-200 p-6 z-50">
                 <div className="grid grid-cols-2 gap-4">
-                  <a href="/#ai" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#ai" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 transition-colors">
                       <Brain className="h-5 w-5 text-blue-600" />
                     </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   
-                  <a href="/#web" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#web" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0 group-hover:bg-purple-200 transition-colors">
                       <Code className="h-5 w-5 text-purple-600" />
                     </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   
-                  <a href="/#mobile" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#mobile" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center flex-shrink-0 group-hover:bg-cyan-200 transition-colors">
                       <Smartphone className="h-5 w-5 text-cyan-600" />
                     </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   
-                  <a href="/#web" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#web" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-200 transition-colors">
                       <Globe className="h-5 w-5 text-indigo-600" />
                     </div>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   
-                  <a href="/#graphic-design" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#graphic-design" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-pink-100 flex items-center justify-center flex-shrink-0 group-hover:bg-pink-200 transition-colors">
                       <Palette className="h-5 w-5 text-pink-600" />
                     </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
                     </div>
                   </a>
                   
-                  <a href="/#marketing" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
+                  <a href="/projects#marketing" className="flex gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0 group-hover:bg-green-200 transition-colors">
                       <BarChart className="h-5 w-5 text-green-600" />
                     </div>
@@ -163,27 +163,27 @@ const Navbar = () => {
               
               {isMobileServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2 pb-2">
-                  <a href="/#ai" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#ai" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <Brain className="h-4 w-4 text-blue-600" />
                     <span className="text-base">AI & Machine Learning</span>
                   </a>
-                  <a href="/#web" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#web" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <Code className="h-4 w-4 text-purple-600" />
                     <span className="text-base">Custom Software</span>
                   </a>
-                  <a href="/#mobile" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#mobile" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <Smartphone className="h-4 w-4 text-cyan-600" />
                     <span className="text-base">Mobile Apps</span>
                   </a>
-                  <a href="/#web" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#web" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <Globe className="h-4 w-4 text-indigo-600" />
                     <span className="text-base">Web Applications</span>
                   </a>
-                  <a href="/#graphic-design" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#graphic-design" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <Palette className="h-4 w-4 text-pink-600" />
                     <span className="text-base">Graphic Design</span>
                   </a>
-                  <a href="/#marketing" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
+                  <a href="/projects#marketing" className="flex items-center gap-2 py-2 text-gray-700 hover:text-tech-blue transition-colors" onClick={() => setIsMenuOpen(false)}>
                     <BarChart className="h-4 w-4 text-green-600" />
                     <span className="text-base">Digital Marketing</span>
                   </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Code, Brain, TrendingUp, ArrowUpRight } from 'lucide-react';
 
 interface ServiceCardProps {
@@ -12,9 +13,9 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon, iconBg, title, description, link, delay, isActive }: ServiceCardProps) => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    const element = document.getElementById(link);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    navigate(`/projects#${link}`);
   };
 
   return (

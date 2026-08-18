@@ -31,12 +31,12 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-bold mb-4">Services</h3>
               <ul className="space-y-2">
-                <li><a href="/#ai" className="text-gray-400 hover:text-white transition-colors">AI & Chatbots</a></li>
-                <li><a href="/#mobile" className="text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li>
-                <li><a href="/#web" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
-                <li><a href="/#ml" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
-                <li><a href="/#graphic-design" className="text-gray-400 hover:text-white transition-colors">Graphic Design</a></li>
-                <li><a href="/#marketing" className="text-gray-400 hover:text-white transition-colors">Marketing</a></li>
+                <li><a href="/projects#ai" className="text-gray-400 hover:text-white transition-colors">AI & Chatbots</a></li>
+                <li><a href="/projects#mobile" className="text-gray-400 hover:text-white transition-colors">Mobile Apps</a></li>
+                <li><a href="/projects#web" className="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                <li><a href="/projects#ml" className="text-gray-400 hover:text-white transition-colors">Machine Learning</a></li>
+                <li><a href="/projects#graphic-design" className="text-gray-400 hover:text-white transition-colors">Graphic Design</a></li>
+                <li><a href="/projects#marketing" className="text-gray-400 hover:text-white transition-colors">Marketing</a></li>
               </ul>
             </div>
             <div>
