@@ -112,7 +112,7 @@ const Navbar = () => {
           <a href="/live-projects" className="text-gray-800 hover:text-tech-blue transition-colors font-semibold text-lg">
             Projects
           </a>
-          <a href="/#team" className="text-gray-800 hover:text-tech-blue transition-colors font-semibold text-lg">
+          <a href="/team" className="text-gray-800 hover:text-tech-blue transition-colors font-semibold text-lg">
             Team
           </a>
           <a href="/contact" className="text-gray-800 hover:text-tech-blue transition-colors font-semibold text-lg">
@@ -194,7 +194,7 @@ const Navbar = () => {
             <a href="/live-projects" className="text-gray-800 py-2 hover:text-tech-blue transition-colors font-semibold text-lg" onClick={() => setIsMenuOpen(false)}>
               Projects
             </a>
-            <a href="/#team" className="text-gray-800 py-2 hover:text-tech-blue transition-colors font-semibold text-lg" onClick={() => setIsMenuOpen(false)}>
+            <a href="/team" className="text-gray-800 py-2 hover:text-tech-blue transition-colors font-semibold text-lg" onClick={() => setIsMenuOpen(false)}>
               Team
             </a>
             <a href="/contact" className="text-gray-800 py-2 hover:text-tech-blue transition-colors font-semibold text-lg" onClick={() => setIsMenuOpen(false)}>
