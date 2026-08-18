@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Code, Brain, TrendingUp, ArrowUpRight } from 'lucide-react';
+import { Code, Brain, TrendingUp, ArrowUpRight, Palette, Megaphone, Smartphone } from 'lucide-react';
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -67,12 +67,20 @@ const ServicesOverview = () => {
       isActive: true
     },
     {
+      icon: <Smartphone className="h-6 w-6 text-white" />,
+      iconBg: "bg-gradient-to-br from-green-500 to-emerald-600",
+      title: "Mobile App Development",
+      description: "We build native and cross-platform mobile applications for iOS and Android that deliver seamless user experiences and drive engagement.",
+      link: "mobile",
+      delay: "200ms"
+    },
+    {
       icon: <Brain className="h-6 w-6 text-white" />,
       iconBg: "bg-tech-purple",
       title: "AI & Machine Learning",
       description: "We develop AI and machine learning solutions that drive automation, optimize processes, and deliver actionable insights for businesses.",
       link: "ai",
-      delay: "200ms"
+      delay: "300ms"
     },
     {
       icon: <TrendingUp className="h-6 w-6 text-white" />,
@@ -80,7 +88,23 @@ const ServicesOverview = () => {
       title: "Digital Transformation",
       description: "We guide businesses through digital transformation, from strategy to implementation, optimizing processes and driving innovation.",
       link: "marketing",
-      delay: "300ms"
+      delay: "400ms"
+    },
+    {
+      icon: <Palette className="h-6 w-6 text-white" />,
+      iconBg: "bg-gradient-to-br from-pink-500 to-purple-500",
+      title: "Graphic Design",
+      description: "We create stunning visual identities, branding materials, and creative designs that capture your brand essence and engage your audience.",
+      link: "graphic-design",
+      delay: "500ms"
+    },
+    {
+      icon: <Megaphone className="h-6 w-6 text-white" />,
+      iconBg: "bg-gradient-to-br from-orange-500 to-red-500",
+      title: "Digital Marketing",
+      description: "We drive growth through strategic digital marketing campaigns, SEO optimization, social media management, and data-driven marketing strategies.",
+      link: "digital-marketing",
+      delay: "600ms"
     }
   ];
 
