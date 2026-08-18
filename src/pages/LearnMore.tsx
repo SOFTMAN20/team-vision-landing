@@ -77,10 +77,10 @@ const LearnMore = () => {
   ];
 
   const timeline = [
-    { year: '2025', title: 'Sachi Founded', description: 'Started Sachi journey in Dar es Salaam with a vision to transform technology in Tanzania' },
-    { year: '2025', title: 'First Clients', description: 'Sachi successfully delivered first AI and software projects' },
-    { year: '2025', title: 'Sachi Team Growth', description: 'Expanded Sachi team with expert developers, designers, and marketers' },
-    { year: '2026', title: 'Sachi Growing Strong', description: 'Sachi now serving 30+ clients with innovative technology solutions' },
+    { year: '2025', title: 'Founded', description: 'Started our journey in Dar es Salaam with a vision to transform technology in Tanzania' },
+    { year: '2025', title: 'First Clients', description: 'Successfully delivered our first AI and software projects' },
+    { year: '2025', title: 'Team Growth', description: 'Expanded our team with expert developers, designers, and marketers' },
+    { year: '2026', title: 'Growing Strong', description: 'Serving 30+ clients with innovative technology solutions' },
   ];
 
   return (
@@ -115,11 +115,11 @@ const LearnMore = () => {
               </motion.div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
-                About <span className="text-yellow-300">Sachi</span>
+                About <span className="text-yellow-300">SACHI TECHNOLOGY</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-8">
-                Sachi (SACHI TECHNOLOGY) is a leading technology company specializing in AI, software development, 
-                graphic design, and digital marketing solutions for Tanzania and Africa.
+                We are a technology company specializing in AI, software development, 
+                graphic design, and digital marketing solutions.
               </p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -212,16 +212,16 @@ const LearnMore = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <Badge className="mb-3 md:mb-4 bg-tech-blue">Sachi's Mission</Badge>
+                <Badge className="mb-3 md:mb-4 bg-tech-blue">Our Mission</Badge>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-                  Pioneering the Future of Technology with Sachi
+                  Pioneering the Future of Technology
                 </h2>
                 <p className="text-gray-600 text-base md:text-lg mb-3 md:mb-4">
-                  At Sachi (SACHI TECHNOLOGY), we're committed to transforming complex challenges 
-                  into elegant solutions that drive progress across industries in Tanzania and Africa.
+                  At SACHI TECHNOLOGY, we're committed to transforming complex challenges 
+                  into elegant solutions that drive progress across industries.
                 </p>
                 <p className="text-gray-600 text-base md:text-lg mb-4 md:mb-6">
-                  Sachi combines expertise in AI, software development, graphic design, and 
+                  We combine expertise in AI, software development, graphic design, and 
                   digital marketing to create integrated solutions that deliver real results.
                 </p>
                 <div className="flex items-center gap-2 md:gap-3 text-tech-blue">
@@ -381,10 +381,10 @@ const LearnMore = () => {
               className="text-center max-w-3xl mx-auto"
             >
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
-                Ready to Start Your Project with Sachi?
+                Ready to Start Your Project?
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8">
-                Let's work together with Sachi to bring your vision to life with cutting-edge technology. Sachi is your trusted partner for AI and software development in Tanzania.
+                Let's work together to bring your vision to life with cutting-edge technology
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center">
                 <Button size="lg" className="bg-white text-tech-blue hover:bg-gray-100 w-full sm:w-auto" asChild>

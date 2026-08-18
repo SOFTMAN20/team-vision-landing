@@ -13,7 +13,7 @@ const Footer = () => {
               <Logo />
             </div>
             <p className="text-gray-400 text-sm">
-              Sachi is pioneering the future of technology in Tanzania with innovative AI solutions, custom software development, and machine learning. Trust Sachi for your technology needs.
+              Pioneering the future of technology with innovative solutions across AI, software, and machine learning.
             </p>
           </div>
           
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Sachi | SACHI TECHNOLOGY. All rights reserved. Sachi - Leading AI and Software Company in Tanzania.</p>
+          <p>&copy; {new Date().getFullYear()} SACHI TECHNOLOGY. All rights reserved.</p>
         </div>
       </div>
     </footer>

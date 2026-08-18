@@ -63,9 +63,9 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="text-center mb-12">
-          <h2 className="mb-4">Meet the <span className="gradient-text">Sachi Team</span></h2>
+          <h2 className="mb-4">Our <span className="gradient-text">Team</span></h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Meet Sachi's diverse team of experts, researchers, and innovators dedicated to pushing technological boundaries. The Sachi team brings innovation to Tanzania and Africa.
+            Meet our diverse team of experts, researchers, and innovators dedicated to pushing technological boundaries.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -75,7 +75,7 @@ const TeamSection = () => {
             image="/images/mray.png"
             delay="100ms"
             gradient="bg-gradient-to-br from-tech-blue/30 to-tech-purple/30 p-1"
-            description="Founder of Sachi. Lead developer specializing in AI solutions, chatbots, and full-stack development. Passionate about creating intelligent systems that solve real-world problems for Tanzania businesses."
+            description="Lead developer specializing in AI solutions, chatbots, and full-stack development. Passionate about creating intelligent systems that solve real-world problems."
           />
           <TeamMember
             name="Victoria Zakaria"

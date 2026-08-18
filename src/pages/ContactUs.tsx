@@ -117,10 +117,10 @@ const ContactUs = () => {
               </motion.div>
               
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Get in <span className="text-yellow-300">Touch with Sachi</span>
+                Get in <span className="text-yellow-300">Touch</span>
               </h1>
               <p className="text-xl text-white/90">
-                Have a project in mind? Let's discuss how Sachi can help bring your ideas to life. Contact Sachi today!
+                Have a project in mind? Let's discuss how we can help bring your ideas to life.
               </p>
             </motion.div>
           </div>
@@ -393,10 +393,10 @@ const ContactUs = () => {
               className="text-center max-w-3xl mx-auto"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Prefer Direct Contact with Sachi?
+                Prefer Direct Contact?
               </h2>
               <p className="text-xl text-white/90 mb-8">
-                Give Sachi a call or send a WhatsApp message for immediate assistance. Sachi is here to help!
+                Give us a call or send a WhatsApp message for immediate assistance
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button size="lg" className="bg-white text-tech-blue hover:bg-gray-100" asChild>
