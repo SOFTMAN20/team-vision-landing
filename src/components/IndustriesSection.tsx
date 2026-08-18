@@ -1,12 +1,12 @@
 import { 
   Building2, 
   Heart, 
-  Shield, 
+  ShieldCheck, 
   Sprout, 
   Landmark, 
   Truck, 
-  Factory,
-  HandHeart 
+  HardHat,
+  Users 
 } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
@@ -17,15 +17,15 @@ interface IndustryCardProps {
 }
 
 const IndustryCard = ({ icon, title, delay }: IndustryCardProps) => (
-  <Card className={`p-6 md:p-8 text-center hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-gray-50 to-white hover:scale-105 animate-fade-in [animation-delay:${delay}]`}>
-    <div className="flex justify-center mb-3 md:mb-4">
-      <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-tech-blue/10 flex items-center justify-center">
-        <div className="text-tech-blue">
+  <Card className={`p-6 md:p-8 text-center hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-slate-50 to-slate-100 hover:scale-105 animate-fade-in border-slate-200 [animation-delay:${delay}]`}>
+    <div className="flex justify-center mb-4 md:mb-5">
+      <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-slate-700 flex items-center justify-center shadow-md">
+        <div className="text-slate-300">
           {icon}
         </div>
       </div>
     </div>
-    <h3 className="text-base md:text-lg font-semibold text-gray-800">
+    <h3 className="text-base md:text-lg font-semibold text-slate-700">
       {title}
     </h3>
   </Card>
@@ -34,42 +34,42 @@ const IndustryCard = ({ icon, title, delay }: IndustryCardProps) => (
 const IndustriesSection = () => {
   const industries = [
     {
-      icon: <Building2 className="w-8 h-8" />,
+      icon: <Building2 className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Banking & FinTech",
       delay: "100ms"
     },
     {
-      icon: <HandHeart className="w-8 h-8" />,
+      icon: <Users className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Non-Profit & NGOs",
       delay: "200ms"
     },
     {
-      icon: <Shield className="w-8 h-8" />,
+      icon: <ShieldCheck className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Insurance",
       delay: "300ms"
     },
     {
-      icon: <Sprout className="w-8 h-8" />,
+      icon: <Sprout className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Agriculture",
       delay: "400ms"
     },
     {
-      icon: <Heart className="w-8 h-8" />,
+      icon: <Heart className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Healthcare",
       delay: "500ms"
     },
     {
-      icon: <Landmark className="w-8 h-8" />,
+      icon: <Landmark className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Government",
       delay: "600ms"
     },
     {
-      icon: <Truck className="w-8 h-8" />,
+      icon: <Truck className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Logistics & Supply Chain",
       delay: "700ms"
     },
     {
-      icon: <Factory className="w-8 h-8" />,
+      icon: <HardHat className="w-10 h-10 md:w-12 md:h-12" strokeWidth={1.5} />,
       title: "Mining",
       delay: "800ms"
     }

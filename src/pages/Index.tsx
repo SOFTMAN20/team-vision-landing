@@ -20,8 +20,8 @@ const Index = () => {
         <Logos3 />
         <ProjectSection />
         <OurProcess />
-        <TeamSection />
         <IndustriesSection />
+        <TeamSection />
       </main>
       <Footer />
       <WhatsAppFloat />

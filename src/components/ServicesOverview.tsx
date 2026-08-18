@@ -1,10 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Code, Brain, TrendingUp, ArrowUpRight, Palette, Megaphone, Smartphone } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 interface ServiceCardProps {
-  icon: React.ReactNode;
-  iconBg: string;
+  image: string;
   title: string;
   description: string;
   link: string;
@@ -12,7 +11,7 @@ interface ServiceCardProps {
   isActive?: boolean;
 }
 
-const ServiceCard = ({ icon, iconBg, title, description, link, delay, isActive }: ServiceCardProps) => {
+const ServiceCard = ({ image, title, description, link, delay, isActive }: ServiceCardProps) => {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate(`/projects#${link}`);
@@ -25,12 +24,14 @@ const ServiceCard = ({ icon, iconBg, title, description, link, delay, isActive }
       }`}
       onClick={handleClick}
     >
-      <div className="flex justify-between items-start mb-6">
-        <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${iconBg}`}>
-          {icon}
-        </div>
-        <div className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-tech-blue group-hover:border-tech-blue transition-all duration-300">
-          <ArrowUpRight className="h-5 w-5 text-gray-500 group-hover:text-white transition-colors duration-300" />
+      {/* Image Container */}
+      <div className="mb-6">
+        <div className="w-full h-48 rounded-xl overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
         </div>
       </div>
 
@@ -58,8 +59,7 @@ const ServiceCard = ({ icon, iconBg, title, description, link, delay, isActive }
 const ServicesOverview = () => {
   const services = [
     {
-      icon: <Code className="h-6 w-6 text-white" />,
-      iconBg: "bg-tech-blue",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop", 
       title: "Software Development",
       description: "We design and develop secure, scalable custom software, including mobile apps, web apps, and enterprise solutions, tailored to your business needs.",
       link: "web",
@@ -67,40 +67,35 @@ const ServicesOverview = () => {
       isActive: true
     },
     {
-      icon: <Smartphone className="h-6 w-6 text-white" />,
-      iconBg: "bg-gradient-to-br from-green-500 to-emerald-600",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
       title: "Mobile App Development",
       description: "We build native and cross-platform mobile applications for iOS and Android that deliver seamless user experiences and drive engagement.",
       link: "mobile",
       delay: "200ms"
     },
     {
-      icon: <Brain className="h-6 w-6 text-white" />,
-      iconBg: "bg-tech-purple",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
       title: "AI & Machine Learning",
       description: "We develop AI and machine learning solutions that drive automation, optimize processes, and deliver actionable insights for businesses.",
       link: "ai",
       delay: "300ms"
     },
     {
-      icon: <TrendingUp className="h-6 w-6 text-white" />,
-      iconBg: "bg-tech-teal",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
       title: "Digital Transformation",
       description: "We guide businesses through digital transformation, from strategy to implementation, optimizing processes and driving innovation.",
       link: "marketing",
       delay: "400ms"
     },
     {
-      icon: <Palette className="h-6 w-6 text-white" />,
-      iconBg: "bg-gradient-to-br from-pink-500 to-purple-500",
+      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop",
       title: "Graphic Design",
       description: "We create stunning visual identities, branding materials, and creative designs that capture your brand essence and engage your audience.",
       link: "graphic-design",
       delay: "500ms"
     },
     {
-      icon: <Megaphone className="h-6 w-6 text-white" />,
-      iconBg: "bg-gradient-to-br from-orange-500 to-red-500",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       title: "Digital Marketing",
       description: "We drive growth through strategic digital marketing campaigns, SEO optimization, social media management, and data-driven marketing strategies.",
       link: "digital-marketing",
