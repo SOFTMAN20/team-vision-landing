@@ -150,6 +150,10 @@ const Logos3 = ({
                       <img
                         src={logo.image}
                         alt={`${logo.description} logo`}
+                        width="48"
+                        height="48"
+                        loading="lazy"
+                        decoding="async"
                         className={logo.className}
                         loading="lazy"
                       />

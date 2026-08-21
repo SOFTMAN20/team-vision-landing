@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
+import SEO from '@/components/SEO';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -155,6 +156,12 @@ const LiveProjects = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Live Projects - SACHI TECHNOLOGY | Active AI & Software Development Projects"
+        description="Browse SACHI TECHNOLOGY's live projects and active deployments. See our AI solutions, mobile applications, web platforms, and digital solutions in action for clients across Tanzania and Africa."
+        canonical="https://sachitechnology.com/live-projects"
+        keywords="live projects Tanzania, active software projects, deployed AI solutions, live mobile apps, production web applications, SACHI TECHNOLOGY portfolio"
+      />
       <Navbar />
       
       <main className="flex-grow">
@@ -221,6 +228,10 @@ const LiveProjects = () => {
                       <img
                         src={project.image}
                         alt={project.title}
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute top-3 right-3">

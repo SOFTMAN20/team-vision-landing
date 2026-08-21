@@ -18,11 +18,11 @@ const TeamMember = ({ name, role, image, delay, gradient, description }: TeamMem
         <img 
           src={image} 
           alt={`${name} - ${role} at SACHI TECHNOLOGY`}
-          className="w-full h-full object-cover"
-          loading="lazy"
           width="96"
           height="96"
+          loading="lazy"
           decoding="async"
+          className="w-full h-full object-cover"
         />
       </div>
       <CardTitle>{name}</CardTitle>

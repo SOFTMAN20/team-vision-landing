@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
+import SEO from '@/components/SEO';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -87,6 +88,12 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Contact Us - SACHI TECHNOLOGY | Get in Touch for AI & Software Solutions"
+        description="Contact SACHI TECHNOLOGY for AI development, software solutions, mobile apps, and digital services in Tanzania. Email: alexmray2002@gmail.com | Phone: +255 750 939 217 | Location: Dar es Salaam, Tanzania"
+        canonical="https://sachitechnology.com/contact"
+        keywords="contact SACHI TECHNOLOGY, software development inquiries Tanzania, AI consultation Tanzania, tech support Dar es Salaam, get quote software development"
+      />
       <Navbar />
       
       <main className="flex-grow">

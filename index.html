@@ -44,9 +44,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     
-    <!-- Preload critical images for faster loading -->
-    <link rel="preload" as="image" href="/logo1.png" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/mray.png" fetchpriority="high" />
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.simpleicons.org" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    
+    <!-- Performance optimization meta tags -->
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
 
     <!-- Schema.org markup for Google -->
     <script type="application/ld+json">

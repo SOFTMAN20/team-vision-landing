@@ -20,8 +20,10 @@ const Logo = ({ className = "", size = 'md', showText = true }: LogoProps) => {
       <img
         src="/logo1.png"
         alt="SACHI TECHNOLOGY Logo"
-        height={logoHeight}
         width={logoHeight * 2}
+        height={logoHeight}
+        loading="eager"
+        decoding="async"
         className="h-auto w-auto object-contain rounded-md"
         style={{ maxHeight: `${logoHeight}px` }}
       />

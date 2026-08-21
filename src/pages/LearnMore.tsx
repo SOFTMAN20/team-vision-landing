@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
+import SEO from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -85,6 +86,12 @@ const LearnMore = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="About Us - SACHI TECHNOLOGY | Leading AI & Software Company in Tanzania"
+        description="Learn about SACHI TECHNOLOGY - a leading AI and software development company in Tanzania. We deliver innovative solutions in AI, machine learning, mobile apps, web development, graphic design, and digital marketing for businesses across Africa."
+        canonical="https://sachitechnology.com/learn-more"
+        keywords="about SACHI TECHNOLOGY, AI company Tanzania, software company Dar es Salaam, tech company Africa, AI solutions Tanzania, enterprise software development"
+      />
       <Navbar />
       
       <main className="flex-grow">
@@ -238,7 +245,11 @@ const LearnMore = () => {
               >
                 <img 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                  alt="Team collaboration" 
+                  alt="Team collaboration"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async" 
                   className="w-full h-full object-cover"
                 />
               </motion.div>

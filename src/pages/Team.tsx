@@ -4,10 +4,17 @@ import TeamSection from '@/components/TeamSection';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
+import SEO from '@/components/SEO';
 
 const Team = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Our Team - SACHI TECHNOLOGY | Expert Software Developers in Tanzania"
+        description="Meet the expert software developers and AI specialists at SACHI TECHNOLOGY. Our team includes Alex Mray (AI Developer), Victoria Zakaria (Software Architect), Tonny (Mobile Developer), and Frank Elisha (Graphics Designer) - building innovative solutions for Tanzania and Africa."
+        canonical="https://sachitechnology.com/team"
+        keywords="SACHI TECHNOLOGY team, software developers Tanzania, AI developers Tanzania, mobile app developers Dar es Salaam, software engineers Africa, tech team Tanzania"
+      />
       <Navbar />
       <main className="flex-grow pt-20">
         {/* Hero Section for Team Page */}

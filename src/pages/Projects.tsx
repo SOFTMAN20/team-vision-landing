@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import FloatingAssistant from '@/components/FloatingAssistant';
+import SEO from '@/components/SEO';
 import AISection from '@/components/project/AISection';
 import MobileSection from '@/components/project/MobileSection';
 import WebSection from '@/components/project/WebSection';
@@ -27,6 +28,12 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Our Projects - SACHI TECHNOLOGY | AI, Mobile & Web Development Portfolio"
+        description="Explore SACHI TECHNOLOGY's portfolio of innovative projects including AI solutions, mobile apps, web applications, machine learning systems, graphic design, and digital marketing campaigns for businesses in Tanzania and Africa."
+        canonical="https://sachitechnology.com/projects"
+        keywords="SACHI TECHNOLOGY projects, AI projects Tanzania, mobile app portfolio, web development projects, software portfolio Tanzania, tech projects Africa"
+      />
       <Navbar />
       <main className="flex-grow bg-white">
         <section className="section-padding bg-gradient-to-b from-blue-50 to-white border-b">

@@ -36,7 +36,11 @@ const ProjectCard = ({
       <div className="mb-4 overflow-hidden rounded-md">
         <img 
           src={imageSrc} 
-          alt={title} 
+          alt={title}
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async" 
           className="w-full h-48 md:h-56 object-cover transition-transform hover:scale-105"
         />
       </div>
