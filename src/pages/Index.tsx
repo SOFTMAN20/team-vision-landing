@@ -12,9 +12,9 @@ import { Logos3 } from '@/components/ui/logos3';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow overflow-x-hidden">
         <HeroSection />
         <Logos3 />
         <ProjectSection />

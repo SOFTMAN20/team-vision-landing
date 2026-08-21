@@ -59,7 +59,7 @@ const HeroSection = () => {
   }, [typedText, isDeleting, loopNum, typingSpeed]);
 
   return (
-    <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding overflow-hidden">
+    <section className="relative bg-gradient-to-b from-gray-50 to-white section-padding">
       <div className="container-custom grid md:grid-cols-2 gap-8 items-center">
         <div className="animate-fade-in [animation-delay:200ms] text-center md:text-left">
           <div className="mb-4 md:mb-6">
