@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Search, Target, FileText, Code, TestTube, Rocket, CheckCircle2 } from 'lucide-react';
+import { Search, Target, FileText, Code, TestTube, Rocket, CheckCircle2, ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface ProcessStep {
   number: string;
@@ -165,10 +166,194 @@ const OurProcess = () => {
   const currentStep = processSteps[activeStep];
 
   return (
-    <section 
-      ref={sectionRef} 
-      className="relative bg-gradient-to-b from-gray-50 to-white py-20 hidden lg:block"
-    >
+    <>
+      {/* Mobile Version - Phone Screen with Page Turning Animation */}
+      <section className="relative bg-gradient-to-b from-gray-50 to-white py-12 lg:hidden overflow-hidden">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <p className="text-tech-blue font-semibold uppercase tracking-wider mb-4 text-sm">
+              OUR PROCESS
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              A collaboration journey,<br />
+              <span className="gradient-text">from concept to delivery</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+              Scroll to explore our 6-step process
+            </p>
+          </div>
+
+          {/* Mobile Phone Frame */}
+          <div className="max-w-md mx-auto relative">
+            {/* Phone Frame */}
+            <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-[3rem] p-3 shadow-2xl">
+              {/* Phone Notch */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-7 bg-gray-900 rounded-b-3xl z-10"></div>
+              
+              {/* Phone Screen */}
+              <div className="bg-white rounded-[2.5rem] overflow-hidden relative" style={{ height: '600px' }}>
+                {/* Animated Steps - Stack Layout */}
+                <div className="relative h-full">
+                  <AnimatePresence mode="wait">
+                    {processSteps.map((step, index) => (
+                      index <= activeStep && (
+                        <motion.div
+                          key={index}
+                          initial={{ y: '100%', opacity: 0 }}
+                          animate={{ 
+                            y: index === activeStep ? '0%' : '-100%',
+                            opacity: index === activeStep ? 1 : 0
+                          }}
+                          exit={{ y: '-100%', opacity: 0 }}
+                          transition={{ 
+                            type: 'spring',
+                            stiffness: 100,
+                            damping: 20,
+                            duration: 0.6
+                          }}
+                          className="absolute inset-0 bg-white"
+                        >
+                          <div className="h-full overflow-y-auto p-6">
+                            {/* Step Header */}
+                            <div className="flex items-start gap-4 mb-6">
+                              <div className={`w-14 h-14 rounded-xl ${step.gradient} flex items-center justify-center flex-shrink-0`}>
+                                {step.icon}
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-xs font-semibold text-tech-blue uppercase tracking-wider mb-1">
+                                  STEP {step.number}
+                                </p>
+                                <h3 className="text-lg font-bold text-gray-900">
+                                  {step.title}
+                                </h3>
+                              </div>
+                            </div>
+
+                            <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                              {step.description}
+                            </p>
+
+                            {/* Process Details */}
+                            <div className="space-y-4 mb-6">
+                              {step.processes.map((process, idx) => (
+                                <motion.div
+                                  key={idx}
+                                  initial={{ opacity: 0, x: -20 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: idx * 0.1 + 0.3 }}
+                                  className="flex gap-3"
+                                >
+                                  <CheckCircle2 className="h-5 w-5 text-tech-blue flex-shrink-0 mt-0.5" />
+                                  <div>
+                                    <p className="font-semibold text-gray-900 text-sm mb-1">
+                                      {process.title}
+                                    </p>
+                                    <p className="text-gray-600 text-xs leading-relaxed">
+                                      {process.description}
+                                    </p>
+                                  </div>
+                                </motion.div>
+                              ))}
+                            </div>
+
+                            {/* Tools */}
+                            {step.tools && step.tools.length > 0 && (
+                              <div className="pt-4 border-t border-gray-100">
+                                <p className="text-xs font-semibold text-gray-700 mb-3">
+                                  Tools we use
+                                </p>
+                                <div className="flex flex-wrap gap-2">
+                                  {step.tools.map((tool, idx) => (
+                                    <motion.span
+                                      key={idx}
+                                      initial={{ opacity: 0, scale: 0.8 }}
+                                      animate={{ opacity: 1, scale: 1 }}
+                                      transition={{ delay: idx * 0.05 + 0.5 }}
+                                      className="px-3 py-1.5 bg-blue-50 text-tech-blue text-xs font-medium rounded-lg border border-blue-100"
+                                    >
+                                      {tool}
+                                    </motion.span>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Next Step Indicator */}
+                            {activeStep < processSteps.length - 1 && (
+                              <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.8 }}
+                                className="absolute bottom-6 left-1/2 transform -translate-x-1/2"
+                              >
+                                <div className="flex flex-col items-center gap-2 text-gray-400">
+                                  <span className="text-xs font-medium">Scroll for next step</span>
+                                  <ChevronDown className="h-5 w-5 animate-bounce" />
+                                </div>
+                              </motion.div>
+                            )}
+                          </div>
+                        </motion.div>
+                      )
+                    ))}
+                  </AnimatePresence>
+                </div>
+              </div>
+            </div>
+
+            {/* Step Navigation Dots */}
+            <div className="flex justify-center gap-2 mt-6">
+              {processSteps.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveStep(index)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    activeStep === index 
+                      ? 'w-8 bg-tech-blue' 
+                      : 'w-2 bg-gray-300'
+                  }`}
+                  aria-label={`Go to step ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Swipe Controls */}
+            <div className="flex justify-between items-center mt-8 px-4">
+              <button
+                onClick={() => setActiveStep(Math.max(0, activeStep - 1))}
+                disabled={activeStep === 0}
+                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                  activeStep === 0
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                    : 'bg-tech-blue text-white hover:bg-tech-purple'
+                }`}
+              >
+                Previous
+              </button>
+              <span className="text-sm text-gray-600 font-medium">
+                {activeStep + 1} / {processSteps.length}
+              </span>
+              <button
+                onClick={() => setActiveStep(Math.min(processSteps.length - 1, activeStep + 1))}
+                disabled={activeStep === processSteps.length - 1}
+                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                  activeStep === processSteps.length - 1
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                    : 'bg-tech-blue text-white hover:bg-tech-purple'
+                }`}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Desktop Version - Original Layout */}
+      <section 
+        ref={sectionRef} 
+        className="relative bg-gradient-to-b from-gray-50 to-white py-20 hidden lg:block"
+      >
       <div className="container-custom">
         <div className="text-center mb-20">
           <p className="text-tech-blue font-semibold uppercase tracking-wider mb-4">
@@ -346,7 +531,8 @@ const OurProcess = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 
